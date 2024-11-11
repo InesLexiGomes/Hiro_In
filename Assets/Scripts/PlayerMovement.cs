@@ -2,35 +2,39 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float _maxForwardSpeed;
-    [SerializeField] private float _maxBackwardSpeed;
-    [SerializeField] private float _maxStrafeSpeed;
-    [SerializeField] private float _maxLookUpAngle;
-    [SerializeField] private float _maxLookDownAngle;
+    // Movement Variables
+    [SerializeField] private float maxForwardSpeed;
+    [SerializeField] private float maxBackwardSpeed;
+    [SerializeField] private float maxStrafeSpeed;
 
-    private CharacterController _controller;
-    private Transform           _head;
-    private Vector3             _headRotation;
-    private Vector3             _velocity;
-    private Vector3             _motion;
+    private Rigidbody   playerRigidbody;
+    private Vector3     playerVelocity;
+    private Vector3     playerMotion;
+
+    // Camera Variables
+    [SerializeField] private float maxLookUpAngle;
+    [SerializeField] private float maxLookDownAngle;
+
+    private Transform   head;
+    private Vector3     headRotation;
 
     void Start()
     {
-        _controller = GetComponent<CharacterController>();
-        _head       = GetComponentInChildren<Camera>().transform;
-
-        HideCursor();
+        playerRigidbody     = GetComponent<Rigidbody>();
+        head                = GetComponentInChildren<Camera>().transform;
+        Cursor.lockState    = CursorLockMode.Locked;
     }
 
-    private void HideCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    void Update()
+    private void Update()
     {
         UpdateRotation();
         UpdateHead();
+    }
+
+    private void FixedUpdate()
+    {
+            UpdateVelocity();
+            UpdatePosition();
     }
 
     private void UpdateRotation()
@@ -42,22 +46,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateHead()
     {
-        _headRotation = _head.localEulerAngles;
-        
-        _headRotation.x -= Input.GetAxis("Mouse Y");
+        headRotation = head.localEulerAngles;
 
-        if (_headRotation.x > 180f)
-            _headRotation.x = Mathf.Max(_maxLookUpAngle, _headRotation.x);
+        headRotation.x -= Input.GetAxis("Mouse Y");
+
+        if (headRotation.x > 180f)
+            headRotation.x = Mathf.Max(maxLookUpAngle, headRotation.x);
         else
-            _headRotation.x = Mathf.Min(_maxLookDownAngle, _headRotation.x);
+            headRotation.x = Mathf.Min(maxLookDownAngle, headRotation.x);
 
-        _head.localEulerAngles = _headRotation;
-    }
-
-    void FixedUpdate()
-    {
-        UpdateVelocity();
-        UpdatePosition();
+        head.localEulerAngles = headRotation;
     }
 
     private void UpdateVelocity()
@@ -66,21 +64,21 @@ public class PlayerMovement : MonoBehaviour
         float strafeAxis    = Input.GetAxis("Horizontal");
 
         if (forwardAxis >= 0f)
-            _velocity.z = forwardAxis * _maxForwardSpeed;
+            playerVelocity.z = forwardAxis * maxForwardSpeed;
         else
-            _velocity.z = forwardAxis * _maxBackwardSpeed;
+            playerVelocity.z = forwardAxis * maxBackwardSpeed;
 
-        _velocity.x = strafeAxis * _maxStrafeSpeed;
+        playerVelocity.x = strafeAxis * maxStrafeSpeed;
 
-        if (_velocity.magnitude > _maxForwardSpeed)
-            _velocity = _velocity.normalized * (forwardAxis > 0 ? _maxForwardSpeed : _maxBackwardSpeed);
+        if (playerVelocity.magnitude > maxForwardSpeed)
+            playerVelocity = playerVelocity.normalized * (forwardAxis > 0 ? maxForwardSpeed : maxBackwardSpeed);
     }
 
     private void UpdatePosition()
     {
-        _motion = transform.TransformVector(_velocity * Time.fixedDeltaTime);
+        playerMotion = transform.TransformVector(playerVelocity * Time.fixedDeltaTime);
 
-        _controller.Move(_motion);
+        playerRigidbody.position += playerMotion;
     }
 
 }
