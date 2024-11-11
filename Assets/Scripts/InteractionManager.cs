@@ -9,48 +9,57 @@ public class InteractionManager : MonoBehaviour
     private List<Interactive> interactives;
     private static InteractionManager instance;
 
+    public static InteractionManager Instance
+    {
+        get { return instance; }
+    }
+
     private InteractionManager()
     {
         instance = this;
         interactives = new List<Interactive>();
     }
 
-    private void Start()
+    public PlayerInventory PlayerInventory
+    {
+        get { return playerInventory; }
+    }
+
+    public string PickMessage
+    {
+        get { return pickMessage; }
+    }
+
+    public void RegisterInteractive(Interactive interactive)
+    {
+        interactives.Add(interactive);
+    }
+
+    void Start()
     {
         ProcessDependencies();
         interactives = null;
     }
 
-    public PlayerInventory Inventory
-    { get { return playerInventory; } }
-
-    public string PickMessage
-    { get { return pickMessage; } }
-
-    public void RegisterInteractive(Interactive interactive)
-    { interactives.Add(interactive); }
-
     private void ProcessDependencies()
     {
-        //foreach (Interactive interactive in interactives)
+        foreach (Interactive interactive in interactives)
         {
-            //foreach (InteractiveData requirementData in interactive.interactiveData.requirements)
+            foreach (InteractiveData requirementData in interactive.InteractiveData.requirements)
             {
-                //Interactive requirement = FindInteractive(requirementData);
-               //interactive.AddRequirement(requirement);
-                //requirement.AddDependent(interactive);
+                Interactive requirement = FindInteractive(requirementData);
+                interactive.AddRequirement(requirement);
+                requirement.AddDependent(interactive);
             }
         }
     }
 
-    public static InteractionManager Instance
-    { get { return instance; } }
-
-    /*public void RegisterInteractive(Interactive interactive)
-    { interactives.add(interactive); }
-
     public Interactive FindInteractive(InteractiveData interactiveData)
     {
-        foreach(Interactive)
-    }*/
+        foreach (Interactive interactive in interactives)
+            if (interactive.InteractiveData == interactiveData)
+                return interactive;
+
+        return null;
+    }
 }

@@ -4,65 +4,72 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _interactionPanel;
-    [SerializeField] private GameObject _inventorySlotsContainer;
-    [SerializeField] private GameObject _inventoryIconsContainer;
-    [SerializeField] private Color      _unselectedSlotColor;
-    [SerializeField] private Color      _selectedSlotColor;
-    
-    private TextMeshProUGUI _interactionMessage;
-    private Image[]         _inventorySlots;
-    private Image[]         _inventoryIcons;
-    private int             _selectedSlotIndex;
+    [SerializeField] private GameObject interactionPanel;
+    [SerializeField] private GameObject inventorySlotsContainer;
+    [SerializeField] private GameObject inventoryIconsContainer;
+    [SerializeField] private Color      unselectedSlotColor;
+    [SerializeField] private Color      selectedSlotColor;
+
+    private TextMeshProUGUI interactionMessage;
+    private Image[]         inventorySlots;
+    private Image[]         inventoryIcons;
+    private int             selectedSlotIndex;
 
     void Start()
     {
-        _interactionMessage = GetComponentInChildren<TextMeshProUGUI>();
-        _inventorySlots     = _inventorySlotsContainer.GetComponentsInChildren<Image>();
-        _inventoryIcons     = _inventoryIconsContainer.GetComponentsInChildren<Image>();
-        _selectedSlotIndex  = -1;
+        interactionMessage = GetComponentInChildren<TextMeshProUGUI>();
+        inventorySlots = inventorySlotsContainer.GetComponentsInChildren<Image>();
+        inventoryIcons = inventoryIconsContainer.GetComponentsInChildren<Image>();
+        selectedSlotIndex = -1;
 
         HideInteractionPanel();
         HideInventoryIcons();
+        ResetInventorySlots();
     }
 
-    private void HideInteractionPanel()
+    public void HideInteractionPanel()
     {
-        _interactionPanel.SetActive(false);
+        interactionPanel.SetActive(false);
+    }
+
+    public void ShowInteractionPanel(string message)
+    {
+        interactionMessage.text = message;
+        interactionPanel.SetActive(true);
     }
 
     public int GetInventorySlotCount()
     {
-        return _inventorySlots.Length;
-    }
-
-        public void ShowInteractionPanel(string message)
-    {
-        _interactionMessage.text = message;
-        _interactionPanel.SetActive(true);
+        return inventorySlots.Length;
     }
 
     public void HideInventoryIcons()
     {
-        foreach (Image image in _inventoryIcons)
+        foreach (Image image in inventoryIcons)
             image.enabled = false;
+    }
+
+    private void ResetInventorySlots()
+    {
+        foreach (Image image in inventorySlots)
+            image.color = unselectedSlotColor;
     }
 
     public void ShowInventoryIcon(int index, Sprite icon)
     {
-        _inventoryIcons[index].sprite   = icon;
-        _inventoryIcons[index].enabled  = true;
+        inventoryIcons[index].sprite = icon;
+        inventoryIcons[index].enabled = true;
     }
 
     public void SelectInventorySlot(int index)
     {
-        if (_selectedSlotIndex != -1)
-            _inventorySlots[_selectedSlotIndex].color = _unselectedSlotColor;
+        if (selectedSlotIndex != -1)
+            inventorySlots[selectedSlotIndex].color = unselectedSlotColor;
 
         if (index != -1)
         {
-            _inventorySlots[index].color = _selectedSlotColor;
-            _selectedSlotIndex = index;
+            inventorySlots[index].color = selectedSlotColor;
+            selectedSlotIndex = index;
         }
     }
 }

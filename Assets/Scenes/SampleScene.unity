@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03179525b9060474299b36b224b83ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiManager: {fileID: 1086683884}
+  uiManager: {fileID: 0}
 --- !u!114 &558177501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8062d9a665bdb44829295939d0641e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uIManager: {fileID: 1086683884}
+  uiManager: {fileID: 0}
   maxInteractionDistance: 2
 --- !u!54 &558177502
 Rigidbody:
@@ -1188,11 +1188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3865053433485949adc5265b00a1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionPanel: {fileID: 304803661}
-  _inventorySlotsContainer: {fileID: 1740944714}
-  _inventoryIconsContainer: {fileID: 1124144867}
-  _unselectedSlotColor: {r: 0, g: 0, b: 0, a: 0}
-  _selectedSlotColor: {r: 0, g: 0, b: 0, a: 0}
+  interactionPanel: {fileID: 304803661}
+  inventorySlotsContainer: {fileID: 1740944714}
+  inventoryIconsContainer: {fileID: 1124144867}
+  unselectedSlotColor: {r: 0, g: 0, b: 0, a: 0}
+  selectedSlotColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1124144867
 GameObject:
   m_ObjectHideFlags: 0
