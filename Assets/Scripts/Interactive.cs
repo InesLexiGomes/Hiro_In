@@ -20,12 +20,12 @@ public class Interactive : MonoBehaviour
         get { return interactiveData; }
     }
 
-    public string inventoryName
+    public string InventoryName
     {
         get { return interactiveData.inventoryName; }
     }
 
-    public Sprite inventoryIcon
+    public Sprite InventoryIcon
     {
         get { return interactiveData.inventoryIcon; }
     }
@@ -37,14 +37,14 @@ public class Interactive : MonoBehaviour
 
     void Awake()
     {
-        interactionManager = InteractionManager.Instance;
-        playerInventory = interactionManager.PlayerInventory;
-        requirements = new List<Interactive>();
-        dependents = new List<Interactive>();
-        animator = GetComponent<Animator>();
-        requirementsMet = interactiveData.requirements.Length == 0;
-        interactionCount = 0;
-        isOn = interactiveData.startsOn;
+        interactionManager =    InteractionManager.Instance;
+        playerInventory =       interactionManager.PlayerInventory;
+        requirements =          new List<Interactive>();
+        dependents =            new List<Interactive>();
+        animator =              GetComponent<Animator>();
+        requirementsMet =       interactiveData.requirements.Length == 0;
+        interactionCount =      0;
+        isOn =                  interactiveData.startsOn;
 
         interactionManager.RegisterInteractive(this);
     }
@@ -87,6 +87,92 @@ public class Interactive : MonoBehaviour
 
     public void Interact()
     {
-        print("INTERACTING!");
+        if (requirementsMet)
+            InteractSelf(true);
+        else if (PlayerHasRequirementSelected())
+            UseRequirementFromInventory();
+    }
+    private void InteractSelf(bool direct)
+    {
+        if (direct && IsType(InteractiveData.Type.Indirect))
+            return;
+        else if (IsType(InteractiveData.Type.Pickable) && !playerInventory.IsFull())
+            PickUpInteractive();
+        else if (IsType(InteractiveData.Type.InteractOnce) || IsType(InteractiveData.Type.InteractMulti))
+            DoDirectInteraction();
+        else if (IsType(InteractiveData.Type.Indirect))
+            PlayAnimation("Interact");
+    }
+
+    private void PickUpInteractive()
+    {
+        playerInventory.Add(this);
+        gameObject.SetActive(false);
+    }
+
+    private void DoDirectInteraction()
+    {
+        ++interactionCount;
+
+        if (IsType(InteractiveData.Type.InteractOnce))
+            isOn = false;
+
+        CheckDependentsRequirements();
+        DoIndirectInteractions();
+
+        PlayAnimation("Interact");
+    }
+
+    private void CheckDependentsRequirements()
+    {
+        foreach (Interactive dependent in dependents)
+            dependent.CheckRequirements();
+    }
+
+    private void CheckRequirements()
+    {
+        foreach (Interactive requirement in requirements)
+        {
+            if (!requirement.requirementsMet ||
+               (!requirement.IsType(InteractiveData.Type.Indirect) && requirement.interactionCount == 0))
+            {
+                requirementsMet = false;
+                return;
+            }
+        }
+
+        requirementsMet = true;
+        PlayAnimation("Awake");
+
+        CheckDependentsRequirements();
+    }
+
+    private void DoIndirectInteractions()
+    {
+        foreach (Interactive dependent in dependents)
+            if (dependent.IsType(InteractiveData.Type.Indirect) && dependent.requirementsMet)
+                dependent.InteractSelf(false);
+    }
+
+    private void PlayAnimation(string animation)
+    {
+        if (animator != null)
+        {
+            gameObject.SetActive(true);
+            animator.SetTrigger(animation);
+        }
+    }
+
+    private void UseRequirementFromInventory()
+    {
+        Interactive requirement = playerInventory.GetSelected();
+
+        playerInventory.Remove(requirement);
+
+        ++requirement.interactionCount;
+
+        requirement.PlayAnimation("Interact");
+
+        CheckRequirements();
     }
 }

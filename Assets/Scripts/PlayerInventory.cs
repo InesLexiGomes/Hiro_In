@@ -21,7 +21,7 @@ public class PlayerInventory : MonoBehaviour
     {
         inventory.Add(item);
 
-        uiManager.ShowInventoryIcon(inventory.Count - 1, item.inventoryIcon);
+        uiManager.ShowInventoryIcon(inventory.Count - 1, item.InventoryIcon);
 
         if (selectedSlotIndex == -1)
             SelectInventorySlot(0);
@@ -34,7 +34,7 @@ public class PlayerInventory : MonoBehaviour
         uiManager.HideInventoryIcons();
 
         for (int i = 0; i < inventory.Count; ++i)
-            uiManager.ShowInventoryIcon(i, inventory[i].inventoryIcon);
+            uiManager.ShowInventoryIcon(i, inventory[i].InventoryIcon);
 
         if (selectedSlotIndex == inventory.Count)
             SelectInventorySlot(selectedSlotIndex - 1);
