@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4215446356616141044}
   - component: {fileID: 7417041041746278768}
   - component: {fileID: 8741018682486499211}
+  - component: {fileID: 2488702162701021457}
   - component: {fileID: 1885200365009876402}
   - component: {fileID: 7903078893726832416}
   m_Layer: 0
@@ -136,6 +137,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
   maxInteractionDistance: 2
+--- !u!114 &2488702162701021457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175303150456192580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5b4e981f74a0447b4edad19dfd371d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 7417041041746278768}
+  pickMessage: Pick up
 --- !u!54 &1885200365009876402
 Rigidbody:
   m_ObjectHideFlags: 0
