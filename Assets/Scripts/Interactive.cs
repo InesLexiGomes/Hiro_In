@@ -3,17 +3,18 @@ using UnityEngine;
 
 public class Interactive : MonoBehaviour
 {
-    [SerializeField] private InteractiveData interactiveData;
+    [SerializeField] private SpecialInteractions specialInteractions;
 
     private InteractionManager  interactionManager;
-    private PlayerInventory     playerInventory;
     private List<Interactive>   requirements;
     private List<Interactive>   dependents;
     private Animator            animator;
     private bool                requirementsMet;
     private int                 interactionCount;
 
-    public bool isOn;
+    public InteractiveData      interactiveData;
+    public PlayerInventory      playerInventory;
+    public bool                 isOn;
 
     public InteractiveData InteractiveData
     {
@@ -149,6 +150,10 @@ public class Interactive : MonoBehaviour
 
     private void DoIndirectInteractions()
     {
+        // Work on this a bit
+        if (specialInteractions != null)
+            specialInteractions.SpecialInteract(this);
+
         foreach (Interactive dependent in dependents)
             if (dependent.IsType(InteractiveData.Type.Indirect) && dependent.requirementsMet)
                 dependent.InteractSelf(false);
