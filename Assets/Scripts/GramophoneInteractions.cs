@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class GramophoneInteractions : SpecialInteractions
 {
-    [SerializeField] private List<InteractiveData> vinyls;
+    [SerializeField] private List<InteractiveData> vinylsData;
+    [SerializeField] private GameObject[] vinylsObject;
 
     private Interactive item;
 
@@ -12,7 +13,7 @@ public class GramophoneInteractions : SpecialInteractions
 
         item = interactive.playerInventory.GetSelected();
         if (item != null)
-            ExecuteVinyls();
+            ExecuteVinylsInteractions();
 
     }
 
@@ -20,7 +21,7 @@ public class GramophoneInteractions : SpecialInteractions
     {
         int vinylCount = 0;
 
-        foreach (InteractiveData vinyl in vinyls)
+        foreach (InteractiveData vinyl in vinylsData)
         {
             if (item.interactiveData == vinyl)
             {
@@ -35,28 +36,43 @@ public class GramophoneInteractions : SpecialInteractions
         return vinylCount;
     }
 
-    private void ExecuteVinyls()
+    private void ExecuteVinylsInteractions()
     {
         switch (VinylCount())
         {
             case 0:
                 // Vinyl A interact
-                Debug.Log("Vinyl A interact");
+                VinylInteraction(0);
                 break;
             case 1:
                 // Vinyl B interact
-                Debug.Log("Vinyl B interact");
+                VinylInteraction(1);
                 break;
             case 2:
                 // Vinyl C interact
-                Debug.Log("Vinyl C interact");
+                VinylInteraction(2);
                 break;
             case 3:
                 // Vinyl D interact
-                Debug.Log("Vinyl D interact");
+                VinylInteraction(3);
                 break;
             default:
                 break;
         }
+    }
+
+    private void VinylInteraction(int index)
+    {
+        GameObject vinyl = vinylsObject[index];
+        Vector3 position = this.transform.position;
+
+        Debug.Log($"Vinyl {index} interact");
+        vinyl.SetActive(true);
+
+        position.y += 0.35f;
+
+        vinyl.transform.position = position;
+        vinyl.transform.rotation = this.transform.rotation;
+
     }
 }
