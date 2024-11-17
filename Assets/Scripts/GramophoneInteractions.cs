@@ -4,22 +4,40 @@ using UnityEngine;
 public class GramophoneInteractions : SpecialInteractions
 {
     [SerializeField] private List<InteractiveData> vinyls;
-    Interactive item;
+
+    private Interactive item;
 
     public override void SpecialInteract(Interactive interactive)
     {
+
         item = interactive.playerInventory.GetSelected();
-        
+        if (item != null)
+            ExecuteVinyls();
+
+    }
+
+    private int VinylCount()
+    {
         int vinylCount = 0;
 
         foreach (InteractiveData vinyl in vinyls)
         {
             if (item.interactiveData == vinyl)
+            {
+                item.playerInventory.Remove(item);
                 break;
+            }
             vinylCount++;
         }
 
-        switch (vinylCount)
+        item = null;
+
+        return vinylCount;
+    }
+
+    private void ExecuteVinyls()
+    {
+        switch (VinylCount())
         {
             case 0:
                 // Vinyl A interact
@@ -40,6 +58,5 @@ public class GramophoneInteractions : SpecialInteractions
             default:
                 break;
         }
-
     }
 }
