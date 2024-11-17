@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac20b48cc9ee23b47bb10484aba034d0, type: 3}
-  m_Name: Gramophone
+  m_Name: Piece5
   m_EditorClassIdentifier: 
-  type: 2
+  type: 0
   startsOn: 1
-  inventoryName: 
+  inventoryName: Painting Piece
   inventoryDescription: 
   inventoryIcon: {fileID: 0}
   requirements: []
   requirementsMessage: 
-  interactionMessages:
-  - Play vinyl.
+  interactionMessages: []
