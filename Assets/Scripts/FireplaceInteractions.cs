@@ -8,8 +8,13 @@ public class FireplaceInteractions : SpecialInteractions
     public override void SpecialInteract(Interactive interactive)
     {
         // Open corresponding GUI and lock player
-        Cursor.lockState    = CursorLockMode.None;
         fireplaceUI.SetActive(true);
         uIManager.DisablePlayer();
     }
+
+    private void Awake()
+    {
+        fireplaceUI.SetActive(false);
+    }
+
 }

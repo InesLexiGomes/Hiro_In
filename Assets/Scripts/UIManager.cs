@@ -80,11 +80,13 @@ public class UIManager : MonoBehaviour
     {
         playerMovementScript.enabled = false;
         playerInteractionScript.enabled = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void EnablePlayer()
     {
         playerMovementScript.enabled = true;
         playerInteractionScript.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
