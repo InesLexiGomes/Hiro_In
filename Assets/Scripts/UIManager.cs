@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] private PlayerMovement playerMovementScript;
+    [SerializeField] private PlayerInteraction playerInteractionScript;
+
     [SerializeField] private GameObject interactionPanel;
     [SerializeField] private GameObject inventorySlotsContainer;
     [SerializeField] private GameObject inventoryIconsContainer;
@@ -71,5 +74,17 @@ public class UIManager : MonoBehaviour
             inventorySlots[index].color = selectedSlotColor;
             selectedSlotIndex = index;
         }
+    }
+
+    public void DisablePlayer()
+    {
+        playerMovementScript.enabled = false;
+        playerInteractionScript.enabled = false;
+    }
+
+    public void EnablePlayer()
+    {
+        playerMovementScript.enabled = true;
+        playerInteractionScript.enabled = true;
     }
 }
