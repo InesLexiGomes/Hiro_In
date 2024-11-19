@@ -1,12 +1,21 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GramophoneInteractions : SpecialInteractions
 {
-    [SerializeField] private List<InteractiveData> vinylsData;
-    [SerializeField] private GameObject[] vinylsObject;
+    // Object interaction
+    [SerializeField] private List<InteractiveData>  vinylsData;
+    [SerializeField] private GameObject[]           vinylsObject;
+
+    // Audio
+    [SerializeField] private AudioSource            audioSource;
+    [SerializeField] private AudioClip[]            vinylsNormalAudio;
+    [SerializeField] private AudioClip[]            vinylsReverseAudio;
 
     private Interactive item;
+    private bool        isReversed = false;
+    private int         currentVinyl = -1;
 
     public override void SpecialInteract(Interactive interactive)
     {
@@ -31,6 +40,9 @@ public class GramophoneInteractions : SpecialInteractions
             vinylCount++;
         }
 
+        if (item == null) vinylCount = -1;
+
+        currentVinyl = vinylCount;
         item = null;
 
         return vinylCount;
@@ -43,20 +55,25 @@ public class GramophoneInteractions : SpecialInteractions
             case 0:
                 // Vinyl A interact
                 VinylInteraction(0);
+                PlayVinyl(0);
                 break;
             case 1:
                 // Vinyl B interact
                 VinylInteraction(1);
+                PlayVinyl(1);
                 break;
             case 2:
                 // Vinyl C interact
                 VinylInteraction(2);
+                PlayVinyl(2);
                 break;
             case 3:
                 // Vinyl D interact
                 VinylInteraction(3);
+                PlayVinyl(3);
                 break;
             default:
+                audioSource.Stop();
                 break;
         }
     }
@@ -73,6 +90,18 @@ public class GramophoneInteractions : SpecialInteractions
 
         vinyl.transform.position = position;
         vinyl.transform.rotation = this.transform.rotation;
+    }
 
+    private void PlayVinyl(int index)
+    {
+            if (!isReversed) audioSource.clip = vinylsNormalAudio[index];
+            else audioSource.clip = vinylsReverseAudio[index];
+            audioSource.Play();
+    }
+
+    public void Reverse()
+    {
+        isReversed = !isReversed;
+        if (currentVinyl >= 0) PlayVinyl(currentVinyl);
     }
 }
