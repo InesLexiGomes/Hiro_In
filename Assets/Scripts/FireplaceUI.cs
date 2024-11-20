@@ -1,8 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FireplaceUI : MonoBehaviour
 {
-    [SerializeField] UIManager uIManager;
+    [SerializeField] private GameObject coinHolder;
+    [SerializeField] private UIManager uIManager;
+
+    public int coinCount = 8;
 
     private void Update()
     {
