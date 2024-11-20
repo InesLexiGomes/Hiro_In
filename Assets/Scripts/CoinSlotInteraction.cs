@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class CoinSlotInteraction : MonoBehaviour
 {
-    [SerializeField] private Color selectedColor;
-    [SerializeField] private Color unselectedColor;
-    [SerializeField] private Image  image;
-    [SerializeField] private int slotNumber;
+    [SerializeField] private Color      selectedColor;
+    [SerializeField] private Color      unselectedColor;
+    [SerializeField] private Image      image;
+    [SerializeField] private int        slotNumber;
 
     private FireplaceUI fireplaceUI;
     private bool hasCoin = true;
@@ -47,11 +47,8 @@ public class CoinSlotInteraction : MonoBehaviour
         hasCoin = false;
     }
 
-    public byte GetCoinValue()
+    public void GetCoinValue(bool[] solutionArray)
     {
-        byte coinValue = (byte) (slotNumber * slotNumber);
-        if (hasCoin) coinValue++;
-
-        return coinValue;
+        solutionArray[slotNumber] = hasCoin;
     }
 }

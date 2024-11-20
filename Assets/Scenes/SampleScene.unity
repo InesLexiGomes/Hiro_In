@@ -507,6 +507,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3865053433485949adc5265b00a1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1134481185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4836652737798160687, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
+  m_PrefabInstance: {fileID: 6406821576282117853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1151877344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,6 +1636,10 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 2562666026503038232, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
+      propertyPath: coinHolder
+      value: 
+      objectReference: {fileID: 1134481185}
     - target: {fileID: 2562666026503038232, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
       propertyPath: coinSlotArray.Array.size
       value: 23
