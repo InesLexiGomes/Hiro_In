@@ -17,6 +17,8 @@ MonoBehaviour:
   inventoryName: 
   inventoryDescription: 
   inventoryIcon: {fileID: 0}
-  requirements: []
-  requirementsMessage: 
-  interactionMessages: []
+  requirements:
+  - {fileID: 11400000, guid: 6fa261f443be1f84b82319b60d305966, type: 2}
+  requirementsMessage: Missing something.
+  interactionMessages:
+  - Insert Coins

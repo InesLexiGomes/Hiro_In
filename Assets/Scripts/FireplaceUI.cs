@@ -1,23 +1,26 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
 public class FireplaceUI : MonoBehaviour
 {
     [SerializeField] private GameObject coinHolder;
     [SerializeField] private UIManager uIManager;
 
-    public int coinCount = 8;
-
+    public int                      CoinCount = 8;
     private CoinSlotInteraction[]   coinArray;
-    public bool[]                   solutionArray;
+    private bool[]                  SolutionArray;
+    private bool[]                  libraArray = new bool[]
+    {true, false, true, false, false,
+    false, false, false, true, false,
+    true, false, false, false, true,
+    false, false, false, false, false,
+    false, true, false, false, false};
 
     private void Awake()
     {
         coinArray = coinHolder.GetComponentsInChildren<CoinSlotInteraction>();
-        solutionArray = new bool[25];
+        SolutionArray = new bool[25];
     }
 
     private void Update()
@@ -36,9 +39,9 @@ public class FireplaceUI : MonoBehaviour
     {
         foreach (CoinSlotInteraction coin in coinArray)
         {
-            coin.GetCoinValue(solutionArray);
+            coin.GetCoinValue(SolutionArray);
         }
-        foreach (bool solution in solutionArray)
+        foreach (bool solution in SolutionArray)
         {
             Debug.Log($"Slot {solution}");
         }

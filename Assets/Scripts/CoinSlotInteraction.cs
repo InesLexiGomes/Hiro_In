@@ -23,14 +23,14 @@ public class CoinSlotInteraction : MonoBehaviour
         if (hasCoin)
         {
             RemoveCoin();
-            fireplaceUI.coinCount++;
+            fireplaceUI.CoinCount++;
         }
 
         // Else if the player has a coin in the inventory and there's no coin in the slot insert it in the slot
-        else if (!hasCoin && fireplaceUI.coinCount > 0)
+        else if (!hasCoin && fireplaceUI.CoinCount > 0)
         {
             InsertCoin();
-            fireplaceUI.coinCount--;
+            fireplaceUI.CoinCount--;
         }
         // Otherwise nothing happens
     }
