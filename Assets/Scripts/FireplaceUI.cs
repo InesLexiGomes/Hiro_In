@@ -8,6 +8,7 @@ public class FireplaceUI : MonoBehaviour
     [SerializeField] private UIManager uIManager;
 
     public int                      CoinCount = 8;
+    private int                     currentPuzzle = 1;
     private CoinSlotInteraction[]   coinArray;
     private bool[]                  SolutionArray;
     private bool[]                  libraArray = new bool[]
@@ -26,7 +27,7 @@ public class FireplaceUI : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K)) Quit();
-        if (Input.GetKeyDown(KeyCode.V)) GetSolution();
+        if (Input.GetKeyDown(KeyCode.V)) GetSolution(libraArray);
     }
 
     private void Quit()
@@ -35,15 +36,26 @@ public class FireplaceUI : MonoBehaviour
             this.gameObject.SetActive(false);
     }
 
-    public void GetSolution()
+    public void GetSolution(bool[] currentArray)
     {
         foreach (CoinSlotInteraction coin in coinArray)
         {
             coin.GetCoinValue(SolutionArray);
         }
-        foreach (bool solution in SolutionArray)
+        bool isEqual = true;
+        for (int i = 0; i < SolutionArray.Length; i++)
         {
-            Debug.Log($"Slot {solution}");
+            if (currentArray[i] != SolutionArray[i])
+            {
+                isEqual = false;
+                break;
+            }
         }
+        if (isEqual && currentPuzzle <3)
+        {
+            currentPuzzle++;
+        }
+        print(isEqual);
+        //else finish puzzle
     }
 }
