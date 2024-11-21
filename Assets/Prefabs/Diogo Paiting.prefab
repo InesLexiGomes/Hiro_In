@@ -724,7 +724,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7667428497092629820}
-  - component: {fileID: 5577362565186333129}
   m_Layer: 0
   m_Name: Diogo Paiting
   m_TagString: Untagged
@@ -764,22 +763,6 @@ Transform:
   - {fileID: 7964146135987649284}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &5577362565186333129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2826567051716917655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbada96794577d54b808f3de77b0aff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
-  playerInventory: {fileID: 0}
-  isOn: 0
 --- !u!1 &3019317708834779702
 GameObject:
   m_ObjectHideFlags: 0

@@ -148,7 +148,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 7790040039949261876}
-  slotNumber: 0
+  slotNumber: 2
 --- !u!1 &466854955053344865
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 5160092418893324309}
-  slotNumber: 0
+  slotNumber: 6
 --- !u!1 &595448188073739472
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 74745591915826506}
-  slotNumber: 0
+  slotNumber: 14
 --- !u!1 &931927568362151844
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 1605974546574487356}
-  slotNumber: 0
+  slotNumber: 13
 --- !u!1 &1817519154690999744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 4895420202240724131}
-  slotNumber: 0
+  slotNumber: 11
 --- !u!1 &2420910468356332764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 3751312304256334987}
-  slotNumber: 0
+  slotNumber: 23
 --- !u!1 &2605499119508875380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1379,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 5083253554262362302}
-  slotNumber: 0
+  slotNumber: 20
 --- !u!1 &2989580748039976844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 3104485150352089286}
-  slotNumber: 0
+  slotNumber: 17
 --- !u!1 &3000832412883929153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 8314576288045394816}
-  slotNumber: 0
+  slotNumber: 8
 --- !u!1 &3018897843637847467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 6126050500642532181}
-  slotNumber: 0
+  slotNumber: 12
 --- !u!1 &3385503029473469711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,7 +2051,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 2370848890799214256}
-  slotNumber: 0
+  slotNumber: 21
 --- !u!1 &3831472699812868766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,7 +2200,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 8579706644222452681}
-  slotNumber: 0
+  slotNumber: 7
 --- !u!1 &4142045365101965585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 7422953591980303728}
-  slotNumber: 0
+  slotNumber: 16
 --- !u!1 &4204756031647071928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,7 +2400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaeef8ca9382ce48a80c26b41a316c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinHolder: {fileID: 4836652737798160687}
   uIManager: {fileID: 2683247534589662099}
+  coinCount: 8
+  solutionArray: 
 --- !u!1 &4458133992513412224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,7 +2950,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 1117298450299644916}
-  slotNumber: 0
+  slotNumber: 24
 --- !u!1 &5365345069771527691
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,7 +3099,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 4192594552914776425}
-  slotNumber: 0
+  slotNumber: 15
 --- !u!1 &5859144884143330978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3282,7 +3285,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 3658300898911897752}
-  slotNumber: 0
+  slotNumber: 9
 --- !u!1 &6277455490265828638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,7 +3434,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 3849052994645715536}
-  slotNumber: 0
+  slotNumber: 18
 --- !u!1 &6491191314528954077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,7 +3708,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 621550378031302847}
-  slotNumber: 0
+  slotNumber: 4
 --- !u!1 &7376270194368614491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,7 +3932,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 4339826378684407238}
-  slotNumber: 0
+  slotNumber: 10
 --- !u!1 &8026010315315083985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,7 +4156,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 2182364041434224875}
-  slotNumber: 0
+  slotNumber: 22
 --- !u!1 &8566715745590394477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4302,7 +4305,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 7502496614438482119}
-  slotNumber: 0
+  slotNumber: 1
 --- !u!1 &8688825815816214762
 GameObject:
   m_ObjectHideFlags: 0
@@ -4451,7 +4454,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 8474344899057277721}
-  slotNumber: 0
+  slotNumber: 3
 --- !u!1 &8825297515645489750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4600,7 +4603,7 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 224066301775720464}
-  slotNumber: 0
+  slotNumber: 5
 --- !u!1 &9118655889955271707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,4 +4888,4 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
   image: {fileID: 3085659430794745182}
-  slotNumber: 0
+  slotNumber: 19

@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
+  interactiveData: {fileID: 11400000, guid: 4cf36505a568d3543ab8d9508df4771b, type: 2}
   playerInventory: {fileID: 0}
   isOn: 0
 --- !u!65 &1218448985207898503
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
+  interactiveData: {fileID: 11400000, guid: d024a326855b81443bb72726ec4ca3ba, type: 2}
   playerInventory: {fileID: 0}
   isOn: 0
 --- !u!65 &4243801274414395556
@@ -1044,7 +1044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
+  interactiveData: {fileID: 11400000, guid: 0a8b21d20d2ae5e44b174e9f9c550790, type: 2}
   playerInventory: {fileID: 0}
   isOn: 0
 --- !u!65 &1991311645879770070
@@ -1566,7 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
+  interactiveData: {fileID: 11400000, guid: fe9d728dea79788448a720bb94d053b2, type: 2}
   playerInventory: {fileID: 0}
   isOn: 0
 --- !u!65 &3793028749245496164
@@ -1599,7 +1599,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6712884631377015821}
-  - component: {fileID: 109324278792986016}
   m_Layer: 0
   m_Name: Wilson Paiting
   m_TagString: Untagged
@@ -1639,22 +1638,6 @@ Transform:
   - {fileID: 9117506410466804786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -155, z: 90}
---- !u!114 &109324278792986016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6378437617952059213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbada96794577d54b808f3de77b0aff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
-  playerInventory: {fileID: 0}
-  isOn: 0
 --- !u!1 &6396233547190605584
 GameObject:
   m_ObjectHideFlags: 0

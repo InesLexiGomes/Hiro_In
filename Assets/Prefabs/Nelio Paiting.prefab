@@ -1816,7 +1816,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7289529701711180621}
-  - component: {fileID: 7307004374217453002}
   m_Layer: 0
   m_Name: Nelio Paiting
   m_TagString: Untagged
@@ -1856,22 +1855,6 @@ Transform:
   - {fileID: 2731154260520596487}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &7307004374217453002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7768024652192847650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbada96794577d54b808f3de77b0aff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  specialInteractions: {fileID: 0}
-  interactiveData: {fileID: 0}
-  playerInventory: {fileID: 0}
-  isOn: 0
 --- !u!1 &8433136010714926457
 GameObject:
   m_ObjectHideFlags: 0

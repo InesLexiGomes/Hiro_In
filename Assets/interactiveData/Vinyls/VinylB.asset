@@ -15,7 +15,8 @@ MonoBehaviour:
   type: 0
   startsOn: 1
   inventoryName: 
-  inventoryIcon: {fileID: 0}
+  inventoryDescription: 
+  inventoryIcon: {fileID: 1518437882, guid: 6ffdd1d99a58fe549bd5461cf99160ff, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages:

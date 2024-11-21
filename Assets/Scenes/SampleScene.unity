@@ -620,11 +620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3865053433485949adc5265b00a1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1134481185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4836652737798160687, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-  m_PrefabInstance: {fileID: 6406821576282117853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1151877344
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +780,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5577362565186333129, guid: ab2737fa8973ef741a160540a1286096, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -934,18 +928,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1742094398}
     m_Modifications:
-    - target: {fileID: 895584749492933158, guid: 34cfda1586081394db6758b4e9f2a8ad, type: 3}
-      propertyPath: interactiveData
-      value: 
-      objectReference: {fileID: 11400000, guid: 0a8b21d20d2ae5e44b174e9f9c550790, type: 2}
-    - target: {fileID: 1014424622978653215, guid: 34cfda1586081394db6758b4e9f2a8ad, type: 3}
-      propertyPath: interactiveData
-      value: 
-      objectReference: {fileID: 11400000, guid: d024a326855b81443bb72726ec4ca3ba, type: 2}
-    - target: {fileID: 1842328920840973522, guid: 34cfda1586081394db6758b4e9f2a8ad, type: 3}
-      propertyPath: interactiveData
-      value: 
-      objectReference: {fileID: 11400000, guid: fe9d728dea79788448a720bb94d053b2, type: 2}
     - target: {fileID: 6378437617952059213, guid: 34cfda1586081394db6758b4e9f2a8ad, type: 3}
       propertyPath: m_Name
       value: Wilson Paiting
@@ -990,12 +972,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7923528154866958819, guid: 34cfda1586081394db6758b4e9f2a8ad, type: 3}
-      propertyPath: interactiveData
-      value: 
-      objectReference: {fileID: 11400000, guid: 4cf36505a568d3543ab8d9508df4771b, type: 2}
-    m_RemovedComponents:
-    - {fileID: 109324278792986016, guid: 34cfda1586081394db6758b4e9f2a8ad, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1368,8 +1345,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nelio Paiting
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7307004374217453002, guid: 2276d4196bb1a2341996a3b240c384fb, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1929,42 +1905,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 330585545}
-    - target: {fileID: 637491917190441998, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 676791186209154472, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 1293396193674102624, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1603036645142135725, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2073431536517183325, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2221021908425467941, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2562666026503038232, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: coinHolder
-      value: 
-      objectReference: {fileID: 1134481185}
-    - target: {fileID: 2562666026503038232, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: coinSlotArray.Array.size
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 2652085348149618940, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2683247534589662099, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
       propertyPath: playerMovementScript
       value: 
@@ -1973,34 +1913,6 @@ PrefabInstance:
       propertyPath: playerInteractionScript
       value: 
       objectReference: {fileID: 1331186689}
-    - target: {fileID: 2769891631226353662, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 2948467394133191650, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3049028037284222457, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 3385097661354815191, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3612546475316288440, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4376905694785476653, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751460867714727690, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4843311113463381774, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2081,49 +1993,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5302861272826503081, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6491191314528954077, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519680158327026966, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 6593333114817384759, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6618222107323049953, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7263728508500315009, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7278539223796818089, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7439199498970917994, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8255643043230215607, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 8535248765746326111, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 9147238012710341555, guid: dbde9a6b7452e5846a724768ebbc5b20, type: 3}
-      propertyPath: slotNumber
-      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
