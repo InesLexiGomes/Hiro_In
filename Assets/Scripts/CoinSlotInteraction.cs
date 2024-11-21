@@ -41,7 +41,7 @@ public class CoinSlotInteraction : MonoBehaviour
         hasCoin = true;
     }
 
-    private void RemoveCoin()
+    public void RemoveCoin()
     {
         image.color = unselectedColor;
         hasCoin = false;

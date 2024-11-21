@@ -8,7 +8,7 @@ public class FireplaceUI : MonoBehaviour
     [SerializeField] private UIManager uIManager;
 
     public int                      CoinCount = 8;
-    private int                     currentPuzzle = 1;
+    private int                     currentConstelation = 1;
     private CoinSlotInteraction[]   coinArray;
     private bool[]                  SolutionArray;
     private bool[]                  libraArray = new bool[]
@@ -38,6 +38,7 @@ public class FireplaceUI : MonoBehaviour
 
     public void GetSolution(bool[] currentArray)
     {
+        // Need to review if I can shorten this code, maybe try bringing the coin slot value so I don't need to organize them first
         foreach (CoinSlotInteraction coin in coinArray)
         {
             coin.GetCoinValue(SolutionArray);
@@ -51,11 +52,24 @@ public class FireplaceUI : MonoBehaviour
                 break;
             }
         }
-        if (isEqual && currentPuzzle <3)
+
+        if (isEqual && currentConstelation <3)
         {
-            currentPuzzle++;
+            NextConstelation();
         }
-        print(isEqual);
-        //else finish puzzle
+
+        else if (isEqual && currentConstelation >= 3)
+        {
+            // Finish puzzle
+        }
+    }
+
+    private void NextConstelation()
+    {
+        foreach (CoinSlotInteraction coin in coinArray) coin.RemoveCoin();
+        currentConstelation++;
+        CoinCount = 8;
+
+        // Add a visual indicator that it is done
     }
 }
