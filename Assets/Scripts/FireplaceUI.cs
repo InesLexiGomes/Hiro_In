@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class FireplaceUI : MonoBehaviour
 {
-    [SerializeField] private GameObject coinHolder;
-    [SerializeField] private UIManager uIManager;
+    [SerializeField] private GameObject     coinHolder;
+    [SerializeField] private UIManager      uIManager;
+    [SerializeField] private Interactive    fireplaceInteractive;
+    [SerializeField] private GameObject   paintingsNormal;
+    [SerializeField] private GameObject   paintingsChanged;
 
     public int                      CoinCount = 8;
-    private int                     currentConstelation = 1;
+    private int                     currentConstelation = 3;
     private CoinSlotInteraction[]   coinArray;
     private bool[]                  SolutionArray;
     private bool[]                  libraArray = new bool[]
@@ -53,15 +56,25 @@ public class FireplaceUI : MonoBehaviour
             }
         }
 
-        if (isEqual && currentConstelation <3)
+        /*if (isEqual && currentConstelation <3)
         {
             NextConstelation();
-        }
+        }*/
 
-        else if (isEqual && currentConstelation >= 3)
+        if (isEqual && currentConstelation >= 3)
         {
-            // Finish puzzle
+            FinishPuzzle();
         }
+    }
+
+    private void FinishPuzzle()
+    {
+        fireplaceInteractive.isOn = false;
+        // (GameObject paintingNormal in paintingsNormal)
+            //paintingNormal.SetActive(false);
+        paintingsChanged.SetActive(true);
+
+        // Add Visual indicator
     }
 
     private void NextConstelation()
