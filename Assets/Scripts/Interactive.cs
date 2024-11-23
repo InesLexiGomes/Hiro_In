@@ -118,6 +118,8 @@ public class Interactive : MonoBehaviour
         if (IsType(InteractiveData.Type.InteractOnce))
             isOn = false;
 
+        PerformSpecialInteraction();
+
         CheckDependentsRequirements();
         DoIndirectInteractions();
 
@@ -145,14 +147,13 @@ public class Interactive : MonoBehaviour
         requirementsMet = true;
         PlayAnimation("Awake");
 
+        PerformSpecialInteraction();
+
         CheckDependentsRequirements();
     }
 
     private void DoIndirectInteractions()
     {
-        // Work on this a bit
-        if (specialInteractions != null)
-            specialInteractions.SpecialInteract(this);
 
         foreach (Interactive dependent in dependents)
             if (dependent.IsType(InteractiveData.Type.Indirect) && dependent.requirementsMet)
@@ -179,5 +180,12 @@ public class Interactive : MonoBehaviour
         requirement.PlayAnimation("Interact");
 
         CheckRequirements();
+    }
+
+    private void PerformSpecialInteraction()
+    {
+        // Work on this a bit
+        if (specialInteractions != null)
+            specialInteractions.SpecialInteract(this);
     }
 }
