@@ -86,7 +86,7 @@ public class GramophoneInteractions : SpecialInteractions
         Debug.Log($"Vinyl {index} interact");
         vinyl.SetActive(true);
 
-        position.y += 0.35f;
+        position.y += 0.24f;
 
         vinyl.transform.position = position;
         vinyl.transform.rotation = this.transform.rotation;
