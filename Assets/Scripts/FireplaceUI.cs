@@ -4,22 +4,17 @@ using UnityEngine;
 
 public class FireplaceUI : MonoBehaviour
 {
-    [SerializeField] private GameObject     coinHolder;
-    [SerializeField] private UIManager      uIManager;
-    [SerializeField] private Interactive    fireplaceInteractive;
-    [SerializeField] private GameObject   paintingsNormal;
-    [SerializeField] private GameObject   paintingsChanged;
+    [SerializeField] private GameObject coinHolder;
+    [SerializeField] private UIManager uIManager;
+    [SerializeField] private Interactive fireplaceInteractive;
+    [SerializeField] private FireplaceSolutions solutions;
+    [SerializeField] private GameObject paintingsNormal;
+    [SerializeField] private GameObject paintingsChanged;
 
-    public int                      CoinCount = 8;
-    private int                     currentConstelation = 3;
-    private CoinSlotInteraction[]   coinArray;
-    private bool[]                  SolutionArray;
-    private bool[]                  libraArray = new bool[]
-    {true, false, true, false, false,
-    false, false, false, true, false,
-    true, false, false, false, true,
-    false, false, false, false, false,
-    false, true, false, false, false};
+    public int CoinCount = 8;
+    private int currentConstelation = 1;
+    private CoinSlotInteraction[] coinArray;
+    private bool[] SolutionArray;
 
     private void Awake()
     {
@@ -30,40 +25,63 @@ public class FireplaceUI : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K)) Quit();
-        if (Input.GetKeyDown(KeyCode.V)) GetSolution(libraArray);
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            switch (currentConstelation)
+            {
+                case 1:
+                    GetSolution(solutions.libraArray);
+                    break;
+                case 2:
+                    GetSolution(solutions.cancerArray);
+                    break;
+                case 3:
+                    GetSolution(solutions.ariesArray);
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     private void Quit()
     {
-            uIManager.EnablePlayer();
-            this.gameObject.SetActive(false);
+        uIManager.EnablePlayer();
+        this.gameObject.SetActive(false);
     }
 
-    public void GetSolution(bool[] currentArray)
+    public void GetSolution(bool[][] currentArray)
     {
-        // Need to review if I can shorten this code, maybe try bringing the coin slot value so I don't need to organize them first
-        foreach (CoinSlotInteraction coin in coinArray)
+        foreach (bool[] solution in currentArray)
         {
-            coin.GetCoinValue(SolutionArray);
-        }
-        bool isEqual = true;
-        for (int i = 0; i < SolutionArray.Length; i++)
-        {
-            if (currentArray[i] != SolutionArray[i])
+            // Need to review if I can shorten this code, maybe try bringing the coin slot value so I don't need to organize them first
+            foreach (CoinSlotInteraction coin in coinArray)
             {
-                isEqual = false;
+                coin.GetCoinValue(SolutionArray);
+            }
+            bool isEqual = true;
+            for (int i = 0; i < SolutionArray.Length; i++)
+            {
+                if (solution[i] != SolutionArray[i])
+                {
+                    isEqual = false;
+                    break;
+                }
+            }
+
+            Debug.Log(isEqual);
+
+            if (isEqual && currentConstelation < 3)
+            {
+                NextConstelation();
                 break;
             }
-        }
 
-        /*if (isEqual && currentConstelation <3)
-        {
-            NextConstelation();
-        }*/
-
-        if (isEqual && currentConstelation >= 3)
-        {
-            FinishPuzzle();
+            else if (isEqual && currentConstelation >= 3)
+            {
+                FinishPuzzle();
+                break;
+            }
         }
     }
 
@@ -73,6 +91,7 @@ public class FireplaceUI : MonoBehaviour
         // (GameObject paintingNormal in paintingsNormal)
             //paintingNormal.SetActive(false);
         paintingsChanged.SetActive(true);
+        Quit();
 
         // Add Visual indicator
     }
