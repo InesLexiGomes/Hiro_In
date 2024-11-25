@@ -2188,10 +2188,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4215446356616141044, guid: 80405ed1179fe3441a0c910c49f4fef8, type: 3}
-      propertyPath: maxLookDownAngle
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 6172221445676194258, guid: 80405ed1179fe3441a0c910c49f4fef8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.15
