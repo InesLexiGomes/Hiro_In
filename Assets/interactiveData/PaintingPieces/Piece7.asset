@@ -16,7 +16,7 @@ MonoBehaviour:
   startsOn: 1
   inventoryName: Painting Piece
   inventoryDescription: 
-  inventoryIcon: {fileID: 0}
+  inventoryIcon: {fileID: 21300000, guid: 1635287fd643cc74abdcccbc8610f53e, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages: []
