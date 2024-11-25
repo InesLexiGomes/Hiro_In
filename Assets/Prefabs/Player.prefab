@@ -109,7 +109,7 @@ MonoBehaviour:
   maxBackwardSpeed: 2
   maxStrafeSpeed: 3
   maxLookUpAngle: 270
-  maxLookDownAngle: 70
+  maxLookDownAngle: 80
 --- !u!114 &7417041041746278768
 MonoBehaviour:
   m_ObjectHideFlags: 0
