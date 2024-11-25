@@ -3,13 +3,14 @@ using UnityEngine.UI;
 
 public class LockUI : MonoBehaviour
 {
-    [SerializeField] private UIManager          uiManager;
-    [SerializeField] private Sprite             red;
-    [SerializeField] private Sprite             blue;
-    [SerializeField] private Sprite             green;
-    [SerializeField] private Sprite             yellow;
-    [SerializeField] private Image[]            buttons;
-    [SerializeField] private LockInteraction    lockInteraction;
+    [SerializeField] private UIManager                  uiManager;
+    [SerializeField] private LockInteraction            lockInteraction;
+    [SerializeField] private LockCombinationButton[]    buttons;
+
+    public Color red;
+    public Color blue;
+    public Color green;
+    public Color yellow;
 
     private void Update()
     {
@@ -22,7 +23,11 @@ public class LockUI : MonoBehaviour
     }
     public void CheckSolution()
     {
-        if (buttons[0] == red && buttons[1] == green && buttons[2] == blue && buttons[3] == yellow && buttons[4] == red)
+        if (buttons[0].index == 0 && 
+            buttons[1].index == 1 &&
+            buttons[2].index == 2 &&
+            buttons[3].index == 3 &&
+            buttons[4].index == 0)
         {
             lockInteraction.OpenLock();
             Quit();

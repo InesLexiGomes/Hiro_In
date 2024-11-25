@@ -11,6 +11,7 @@ public class LockInteraction : SpecialInteractions
     {
         drawer.transform.localPosition = new Vector3(0, 0, 0);
         itemToLock.SetActive(false);
+        lockUI.SetActive(false);
     }
 
     public override void SpecialInteract(Interactive interactive)
