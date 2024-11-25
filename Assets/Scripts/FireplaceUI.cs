@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireplaceUI : MonoBehaviour
 {
     [SerializeField] private GameObject coinHolder;
-    [SerializeField] private UIManager uIManager;
+    [SerializeField] private UIManager uiManager;
     [SerializeField] private Interactive fireplaceInteractive;
     [SerializeField] private FireplaceSolutions solutions;
     [SerializeField] private GameObject paintingsNormal;
@@ -24,7 +24,7 @@ public class FireplaceUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K)) Quit();
+        if (Input.GetKeyDown(KeyCode.Escape)) Quit();
         if (Input.GetKeyDown(KeyCode.V))
         {
             switch (currentConstelation)
@@ -46,7 +46,7 @@ public class FireplaceUI : MonoBehaviour
 
     private void Quit()
     {
-        uIManager.EnablePlayer();
+        uiManager.EnablePlayer();
         this.gameObject.SetActive(false);
     }
 
