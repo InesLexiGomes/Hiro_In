@@ -25,23 +25,6 @@ public class FireplaceUI : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) Quit();
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            switch (currentConstelation)
-            {
-                case 1:
-                    GetSolution(solutions.libraArray);
-                    break;
-                case 2:
-                    GetSolution(solutions.cancerArray);
-                    break;
-                case 3:
-                    GetSolution(solutions.ariesArray);
-                    break;
-                default:
-                    break;
-            }
-        }
     }
 
     private void Quit()
@@ -50,7 +33,7 @@ public class FireplaceUI : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    public void GetSolution(bool[][] currentArray)
+    private void GetSolution(bool[][] currentArray)
     {
         foreach (bool[] solution in currentArray)
         {
@@ -104,4 +87,22 @@ public class FireplaceUI : MonoBehaviour
 
         // Add a visual indicator that it is done
     }
+
+    public void DoButtonInteraction()
+    {
+            switch (currentConstelation)
+            {
+                case 1:
+                    GetSolution(solutions.libraArray);
+                    break;
+                case 2:
+                    GetSolution(solutions.cancerArray);
+                    break;
+                case 3:
+                    GetSolution(solutions.ariesArray);
+                    break;
+                default:
+                    break;
+            }
+        }
 }
