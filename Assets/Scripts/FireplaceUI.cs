@@ -1,15 +1,18 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FireplaceUI : MonoBehaviour
 {
-    [SerializeField] private GameObject coinHolder;
-    [SerializeField] private UIManager uiManager;
-    [SerializeField] private Interactive fireplaceInteractive;
+    [SerializeField] private GameObject         coinHolder;
+    [SerializeField] private UIManager          uiManager;
+    [SerializeField] private Interactive        fireplaceInteractive;
     [SerializeField] private FireplaceSolutions solutions;
-    [SerializeField] private GameObject paintingsNormal;
-    [SerializeField] private GameObject paintingsChanged;
+    [SerializeField] private GameObject         paintingsNormal;
+    [SerializeField] private GameObject         paintingsChanged;
+    [SerializeField] private Image[]            fireplaceLights;
+    [SerializeField] private Color              lightsColor;
 
     public int CoinCount = 8;
     private int currentConstelation = 1;
@@ -81,11 +84,11 @@ public class FireplaceUI : MonoBehaviour
 
     private void NextConstelation()
     {
+        fireplaceLights[currentConstelation-1].color = lightsColor;
+        
         foreach (CoinSlotInteraction coin in coinArray) coin.RemoveCoin();
         currentConstelation++;
         CoinCount = 8;
-
-        // Add a visual indicator that it is done
     }
 
     public void DoButtonInteraction()
