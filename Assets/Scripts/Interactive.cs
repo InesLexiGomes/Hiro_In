@@ -107,6 +107,7 @@ public class Interactive : MonoBehaviour
 
     private void PickUpInteractive()
     {
+        PerformSpecialInteraction();
         playerInventory.Add(this);
         gameObject.SetActive(false);
     }

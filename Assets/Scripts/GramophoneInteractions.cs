@@ -104,4 +104,9 @@ public class GramophoneInteractions : SpecialInteractions
         isReversed = !isReversed;
         if (currentVinyl >= 0) PlayVinyl(currentVinyl);
     }
+
+    public void StopMusic()
+    {
+        audioSource.Stop();
+    }
 }
