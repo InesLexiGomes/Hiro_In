@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,12 +30,13 @@ public class PlayerMovement : MonoBehaviour
     {
         UpdateRotation();
         UpdateHead();
+        if (Input.GetKeyDown(KeyCode.F12)) SceneManager.LoadScene("HiroIn");
     }
 
     private void FixedUpdate()
     {
-            UpdateVelocity();
-            UpdatePosition();
+        UpdateVelocity();
+        UpdatePosition();
     }
 
     private void UpdateRotation()

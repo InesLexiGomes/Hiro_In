@@ -71,7 +71,7 @@ public class FireplaceUI : MonoBehaviour
         }
     }
 
-    private void FinishPuzzle()
+    public void FinishPuzzle()
     {
         fireplaceInteractive.isOn = false;
         // (GameObject paintingNormal in paintingsNormal)

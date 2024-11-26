@@ -14,6 +14,11 @@ public class LockInteraction : SpecialInteractions
         lockUI.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F1)) OpenLock();
+    }
+
     public override void SpecialInteract(Interactive interactive)
     {
         lockUI.SetActive(true);

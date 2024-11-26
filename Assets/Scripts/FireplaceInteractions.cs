@@ -2,19 +2,25 @@ using UnityEngine;
 
 public class FireplaceInteractions : SpecialInteractions
 {
-    [SerializeField] private GameObject fireplaceUI;
+    [SerializeField] private GameObject fireplaceUIObject;
+    [SerializeField] private FireplaceUI fireplaceUI;
     [SerializeField] private UIManager uiManager;
 
     public override void SpecialInteract(Interactive interactive)
     {
         // Open corresponding GUI and lock player
-        fireplaceUI.SetActive(true);
+        fireplaceUIObject.SetActive(true);
         uiManager.DisablePlayer();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F2)) fireplaceUI.FinishPuzzle();
     }
 
     private void Awake()
     {
-        fireplaceUI.SetActive(false);
+        fireplaceUIObject.SetActive(false);
     }
 
 }
