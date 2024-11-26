@@ -4,7 +4,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("HiroIn");
+        SceneManager.LoadScene("HiroIn");
     }
 
     public void QuitGame()
