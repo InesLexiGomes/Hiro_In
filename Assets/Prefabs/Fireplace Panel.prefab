@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 6101836869713541880}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 0.1}
+  m_LocalPosition: {x: 0.006, y: 0.015, z: -0}
+  m_LocalScale: {x: 0.6, y: 0.3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3952160468691902024}
@@ -96,7 +96,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 817c015efd48e254888fa7a50501914a, type: 2}
+  - {fileID: 2100000, guid: 694b76d650786f44b9f32c76211ab972, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireplaceUI: {fileID: 0}
-  uIManager: {fileID: 0}
+  uiManager: {fileID: 0}
 --- !u!65 &3511557214434227414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -202,5 +202,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.16, y: 1.33, z: 0.39430094}
-  m_Center: {x: 0, y: 0, z: -0.11215615}
+  m_Size: {x: 0.84, y: 0.42, z: 0.12846655}
+  m_Center: {x: 2.6447185e-16, y: 0, z: -0.10638942}
