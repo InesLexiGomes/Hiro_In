@@ -10645,7 +10645,7 @@ PrefabInstance:
     - target: {fileID: -4949571487130123610, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: aaff2ddc0bf8aaa45b7417fe6ead17b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 694b76d650786f44b9f32c76211ab972, type: 2}
     - target: {fileID: -4919190359099767691, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10733,7 +10733,7 @@ PrefabInstance:
     - target: {fileID: -2157282966262817796, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: aaff2ddc0bf8aaa45b7417fe6ead17b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 694b76d650786f44b9f32c76211ab972, type: 2}
     - target: {fileID: -2137925489656929345, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: m_Name
       value: Back Roof
@@ -10893,7 +10893,7 @@ PrefabInstance:
     - target: {fileID: 1680494338726599014, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: aaff2ddc0bf8aaa45b7417fe6ead17b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 694b76d650786f44b9f32c76211ab972, type: 2}
     - target: {fileID: 1792101322918354073, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10965,7 +10965,7 @@ PrefabInstance:
     - target: {fileID: 3729373587068946965, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: aaff2ddc0bf8aaa45b7417fe6ead17b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 694b76d650786f44b9f32c76211ab972, type: 2}
     - target: {fileID: 3742935809994818227, guid: e6f954c8f1a77d44a9702ca067a8f268, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
