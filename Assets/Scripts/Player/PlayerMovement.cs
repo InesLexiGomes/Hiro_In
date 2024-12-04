@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateVelocity();
-        UpdatePosition();
+        //UpdatePosition();
     }
 
     private void UpdateRotation()
@@ -72,15 +72,19 @@ public class PlayerMovement : MonoBehaviour
 
         playerVelocity.x = strafeAxis * maxStrafeSpeed;
 
+        playerVelocity.y = playerRigidbody.linearVelocity.y;
+
         if (playerVelocity.magnitude > maxForwardSpeed)
             playerVelocity = playerVelocity.normalized * (forwardAxis > 0 ? maxForwardSpeed : maxBackwardSpeed);
+
+        playerRigidbody.linearVelocity = transform.TransformDirection(playerVelocity);
     }
 
-    private void UpdatePosition()
+    /*private void UpdatePosition()
     {
         playerMotion = transform.TransformVector(playerVelocity * Time.fixedDeltaTime);
 
         playerRigidbody.position += playerMotion;
-    }
+    }*/
 
 }
