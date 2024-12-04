@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The poison cannot penetrate such a powerful\_shield"
+  m_text: "The poison cannot penetrate such a powerful\_shield."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428a67c55035ee74599e0f5f8ad98455, type: 2}
   m_sharedMaterial: {fileID: 2760707362021578540, guid: 428a67c55035ee74599e0f5f8ad98455, type: 2}
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "At the start of the path the scales \nweigh everything \nwith fairness"
+  m_text: "At the start of the path the scales \nweigh everything \nwith fairness."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428a67c55035ee74599e0f5f8ad98455, type: 2}
   m_sharedMaterial: {fileID: 2760707362021578540, guid: 428a67c55035ee74599e0f5f8ad98455, type: 2}
@@ -2264,7 +2264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The lamb finishes \nit full of courage"
+  m_text: "The lamb finishes \nit full of courage."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428a67c55035ee74599e0f5f8ad98455, type: 2}
   m_sharedMaterial: {fileID: 2760707362021578540, guid: 428a67c55035ee74599e0f5f8ad98455, type: 2}
