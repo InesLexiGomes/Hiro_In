@@ -26,36 +26,34 @@ public class Book : MonoBehaviour
         }
         pagesFront[0].SetAsLastSibling();
         backButton.SetActive(false);
-
     }
 
     public void RotateForward()
     {
         if (rotate == true) { return; }
         index++;
-        float angle = 180; //in order to rotate the page forward, you need to set the rotation by 180 degrees around the y axis
+        float angle = 180; //in order to rotate the page forward, set the rotation by 180 degrees around the y axis
         ForwardButtonActions();
         pagesBack[index].SetAsLastSibling();
         StartCoroutine(Rotate(angle, true));
-
     }
 
     public void ForwardButtonActions()
     {
         if (backButton.activeInHierarchy == false)
         {
-            backButton.SetActive(true); //every time we turn the page forward, the back button should be activated
+            backButton.SetActive(true); //every time we turn the page forward, the back button activates
         }
         if (index == pagesFront.Count - 1)
         {
-            forwardButton.SetActive(false); //if the page is last then we turn off the forward button
+            forwardButton.SetActive(false); //if the page is last then turn off the forward button
         }
     }
 
     public void RotateBack()
     {
         if (rotate == true) { return; }
-        float angle = 0; //in order to rotate the page back, you need to set the rotation to 0 degrees around the y axis
+        float angle = 0; //in order to rotate the page back, set the rotation to 0 degrees around the y axis
         pagesFront[index].SetAsLastSibling();
         BackButtonActions();
         StartCoroutine(Rotate(angle, false));
@@ -65,13 +63,12 @@ public class Book : MonoBehaviour
     {
         if (forwardButton.activeInHierarchy == false)
         {
-            forwardButton.SetActive(true); //every time we turn the page back, the forward button should be activated
+            forwardButton.SetActive(true); //every time we turn the page back, the forward button activates
         }
         if (index - 1 == -1)
         {
-            backButton.SetActive(false); //if the page is first then we turn off the back button
-        }
-        
+            backButton.SetActive(false); //if the page is first turn off the back button
+        }      
     }
 
     IEnumerator Rotate(float angle, bool forward)
@@ -96,7 +93,6 @@ public class Book : MonoBehaviour
 
             }
             yield return null;
-
         }
     }
 }
