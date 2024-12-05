@@ -13,6 +13,7 @@ public class FireplaceUI : MonoBehaviour
     [SerializeField] private GameObject         paintingsChanged;
     [SerializeField] private Image[]            fireplaceLights;
     [SerializeField] private Color              lightsColor;
+    [SerializeField] private GameObject carriage;
 
     public int CoinCount = 8;
     private int currentConstelation = 1;
@@ -78,6 +79,7 @@ public class FireplaceUI : MonoBehaviour
             //paintingNormal.SetActive(false);
         paintingsChanged.SetActive(true);
         Quit();
+        carriage.SetActive(true);
 
         // Add Visual indicator
     }

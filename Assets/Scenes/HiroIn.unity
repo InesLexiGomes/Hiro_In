@@ -4359,6 +4359,7 @@ MonoBehaviour:
   - {fileID: 437523552}
   - {fileID: 1517308215}
   lightsColor: {r: 0.062035322, g: 1, b: 0, a: 1}
+  carriage: {fileID: 611294643}
   CoinCount: 8
 --- !u!114 &412868509
 MonoBehaviour:
@@ -7058,6 +7059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2nd Carriage
       objectReference: {fileID: 0}
+    - target: {fileID: 1483390831646368094, guid: e31f8cbf2c1f7e04ca03f4dfa5b90ebf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2415542902732536242, guid: e31f8cbf2c1f7e04ca03f4dfa5b90ebf, type: 3}
       propertyPath: m_Name
       value: 2nd Bogie
@@ -7252,6 +7257,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6820010198554679491, guid: e31f8cbf2c1f7e04ca03f4dfa5b90ebf, type: 3}
   m_PrefabInstance: {fileID: 608067526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &608067528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1483390831646368094, guid: e31f8cbf2c1f7e04ca03f4dfa5b90ebf, type: 3}
+  m_PrefabInstance: {fileID: 608067526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &610723636
 GameObject:
   m_ObjectHideFlags: 0
@@ -7423,6 +7433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3rd Carriage
       objectReference: {fileID: 0}
+    - target: {fileID: 4920407158193443197, guid: 668af4305ca0ec74493971879354dc35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4948832206584727342, guid: 668af4305ca0ec74493971879354dc35, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0350926
@@ -7519,6 +7533,11 @@ PrefabInstance:
 --- !u!4 &611294642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3044284985823558042, guid: 668af4305ca0ec74493971879354dc35, type: 3}
+  m_PrefabInstance: {fileID: 611294641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &611294643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4920407158193443197, guid: 668af4305ca0ec74493971879354dc35, type: 3}
   m_PrefabInstance: {fileID: 611294641}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &621595639
@@ -7941,6 +7960,10 @@ PrefabInstance:
       propertyPath: lockUI
       value: 
       objectReference: {fileID: 610723636}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: carriage
+      value: 
+      objectReference: {fileID: 608067528}
     - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
       propertyPath: uiManager
       value: 
@@ -10402,6 +10425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7514430368986856504, guid: 90742155c6ded084b869c674aa936304, type: 3}
+      propertyPath: carriage
+      value: 
+      objectReference: {fileID: 2022007813}
     - target: {fileID: 7514430368986856504, guid: 90742155c6ded084b869c674aa936304, type: 3}
       propertyPath: train.Array.size
       value: 13
@@ -14279,7 +14306,7 @@ Transform:
   m_GameObject: {fileID: 1278651547}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.2697, y: 0.126, z: 0.676}
+  m_LocalPosition: {x: 0.2697, y: 0.182, z: 0.668}
   m_LocalScale: {x: 9.391713, y: 0.1557, z: 0.6121}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24669,6 +24696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4th Carriage
       objectReference: {fileID: 0}
+    - target: {fileID: 2615197601133417016, guid: be91d1c7cfb041f458c71b5a8a3516fd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3267570336126723888, guid: be91d1c7cfb041f458c71b5a8a3516fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7936939
@@ -24825,6 +24856,11 @@ PrefabInstance:
 --- !u!4 &2022007812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4637522680426023949, guid: be91d1c7cfb041f458c71b5a8a3516fd, type: 3}
+  m_PrefabInstance: {fileID: 2022007811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2022007813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2615197601133417016, guid: be91d1c7cfb041f458c71b5a8a3516fd, type: 3}
   m_PrefabInstance: {fileID: 2022007811}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2036159784

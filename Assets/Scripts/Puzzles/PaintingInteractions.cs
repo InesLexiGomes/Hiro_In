@@ -5,6 +5,7 @@ using UnityEngine.Splines;
 public class PaintingInteractions : SpecialInteractions
 {
     [SerializeField] private SplineAnimate[] train;
+    [SerializeField] private GameObject carriage;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class PaintingInteractions : SpecialInteractions
 
     private void Finish()
     {
+        carriage.SetActive(true);
         gameObject.SetActive(false);
         foreach (SplineAnimate trainPart in train)
             trainPart.Loop = SplineAnimate.LoopMode.Once;

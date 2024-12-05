@@ -6,6 +6,7 @@ public class LockInteraction : SpecialInteractions
     [SerializeField] private GameObject drawer;
     [SerializeField] private GameObject lockUI;
     [SerializeField] private UIManager  uiManager;
+    [SerializeField] private GameObject carriage;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class LockInteraction : SpecialInteractions
 
     public void OpenLock()
     {
+        carriage.SetActive(true);
         drawer.transform.localPosition = new Vector3(0, 0, 0.2f);
         gameObject.SetActive(false);
         itemToLock.SetActive(true);
