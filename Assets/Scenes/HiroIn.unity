@@ -2252,6 +2252,7 @@ GameObject:
   - component: {fileID: 198655369}
   - component: {fileID: 198655368}
   - component: {fileID: 198655367}
+  - component: {fileID: 198655370}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -2268,7 +2269,7 @@ Transform:
   m_GameObject: {fileID: 198655365}
   serializedVersion: 2
   m_LocalRotation: {x: -0.36650062, y: -0.93041617, z: 0.0016238535, w: -0.00063965283}
-  m_LocalPosition: {x: -0.001, y: 0.0009, z: 0.0135}
+  m_LocalPosition: {x: -0.0012, y: 0.0007, z: 0.0135}
   m_LocalScale: {x: 0.00020000002, y: 0.0205, z: 0.021999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2348,6 +2349,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198655365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &198655370
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198655365}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2372e31b9dcc8494bb0285755a21dbf2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &205790328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8527,6 +8550,7 @@ GameObject:
   - component: {fileID: 723558501}
   - component: {fileID: 723558500}
   - component: {fileID: 723558499}
+  - component: {fileID: 723558502}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -8623,6 +8647,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723558497}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &723558502
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723558497}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebbb5c194f7f1f24692f112541ba3194, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &733657679
 GameObject:
   m_ObjectHideFlags: 0
@@ -20606,6 +20652,7 @@ GameObject:
   - component: {fileID: 1671741665}
   - component: {fileID: 1671741664}
   - component: {fileID: 1671741663}
+  - component: {fileID: 1671741666}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -20622,7 +20669,7 @@ Transform:
   m_GameObject: {fileID: 1671741661}
   serializedVersion: 2
   m_LocalRotation: {x: -0.36650062, y: -0.93041617, z: 0.0016238535, w: -0.00063965283}
-  m_LocalPosition: {x: -0.001, y: 0.0009, z: 0.0135}
+  m_LocalPosition: {x: -0.0171, y: -0.0164, z: 0.0136}
   m_LocalScale: {x: 0.00020000002, y: 0.0205, z: 0.021999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20702,6 +20749,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671741661}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1671741666
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671741661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 226f9313d97f1b949a6afeaea499df4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1676315734
 GameObject:
   m_ObjectHideFlags: 0
@@ -23289,6 +23358,7 @@ GameObject:
   - component: {fileID: 1930284301}
   - component: {fileID: 1930284300}
   - component: {fileID: 1930284299}
+  - component: {fileID: 1930284302}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -23305,7 +23375,7 @@ Transform:
   m_GameObject: {fileID: 1930284297}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0016239407, y: 0.0006396871, z: 0.36650062, w: -0.93041617}
-  m_LocalPosition: {x: -0.002, y: 0.0008, z: 0.0135}
+  m_LocalPosition: {x: -0.0022, y: 0.0007, z: 0.0135}
   m_LocalScale: {x: 0.0002, y: 0.0205, z: 0.021999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23385,6 +23455,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930284297}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1930284302
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930284297}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6fd27004b6411f4eab63d51cf287ecf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1931693097
 GameObject:
   m_ObjectHideFlags: 0
