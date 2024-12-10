@@ -11,6 +11,8 @@ public class Book : MonoBehaviour
     bool rotate = false;
     [SerializeField] GameObject backButton;
     [SerializeField] GameObject forwardButton;
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameObject bookUI;
 
     private void Start()
     {
@@ -69,6 +71,16 @@ public class Book : MonoBehaviour
         {
             backButton.SetActive(false); //if the page is first turn off the back button
         }      
+    }
+    private void Quit()
+    {
+        uiManager.EnablePlayer();
+        bookUI.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Quit();
     }
 
     IEnumerator Rotate(float angle, bool forward)
