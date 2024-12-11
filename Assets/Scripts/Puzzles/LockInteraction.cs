@@ -3,6 +3,7 @@ using UnityEngine;
 public class LockInteraction : SpecialInteractions
 {
     [SerializeField] private GameObject itemToLock;
+    [SerializeField] private GameObject skylights;
     [SerializeField] private GameObject drawer;
     [SerializeField] private GameObject lockUI;
     [SerializeField] private UIManager  uiManager;
@@ -12,6 +13,7 @@ public class LockInteraction : SpecialInteractions
     {
         drawer.transform.localPosition = new Vector3(0, 0, 0);
         itemToLock.SetActive(false);
+        skylights.SetActive(false);
         lockUI.SetActive(false);
     }
 
@@ -32,5 +34,6 @@ public class LockInteraction : SpecialInteractions
         drawer.transform.localPosition = new Vector3(0, 0, 0.2f);
         gameObject.SetActive(false);
         itemToLock.SetActive(true);
+        skylights.SetActive(true);
     }
 }

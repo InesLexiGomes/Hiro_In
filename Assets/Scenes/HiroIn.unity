@@ -8142,6 +8142,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 608067528}
     - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: skylights
+      value: 
+      objectReference: {fileID: 229742051}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 473727907}
