@@ -14,6 +14,8 @@ public class Book : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     [SerializeField] private GameObject bookUI;
 
+    private bool rotateForward = true;
+
     private void Start()
     {
         InitialState();
@@ -36,7 +38,7 @@ public class Book : MonoBehaviour
         index++;
         float angle = 180; //in order to rotate the page forward, set the rotation by 180 degrees around the y axis
         ForwardButtonActions();
-        pagesBack[index].SetAsLastSibling();
+        rotateForward = true;
         StartCoroutine(Rotate(angle, true));
     }
 
@@ -56,7 +58,7 @@ public class Book : MonoBehaviour
     {
         if (rotate == true) { return; }
         float angle = 0; //in order to rotate the page back, set the rotation to 0 degrees around the y axis
-        pagesFront[index].SetAsLastSibling();
+        rotateForward = false;
         BackButtonActions();
         StartCoroutine(Rotate(angle, false));
     }
@@ -94,6 +96,14 @@ public class Book : MonoBehaviour
             pagesFront[index].rotation = Quaternion.Slerp(pagesFront[index].rotation, targetRotation, value); //smoothly turn the page
             pagesBack[index].rotation = Quaternion.Slerp(pagesBack[index].rotation, targetRotation, value); //smoothly turn the page
             float angle1 = Quaternion.Angle(pagesFront[index].rotation, targetRotation); //calculate the angle between the given angle of rotation and the current angle of rotation
+            if (angle1 < 90f)
+            {
+                if (rotateForward)
+                    pagesBack[index].SetAsLastSibling();
+                else
+                    pagesFront[index].SetAsLastSibling();
+            }
+
             if (angle1 < 0.1f)
             {
                 if (forward == false)
