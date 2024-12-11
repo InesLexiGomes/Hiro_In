@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
         float rotation = Input.GetAxis("Mouse X");
 
         transform.Rotate(0f, rotation, 0f);
+
+        playerRigidbody.rotation = transform.rotation;
     }
 
     private void UpdateHead()
