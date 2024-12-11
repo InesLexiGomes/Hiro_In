@@ -4333,7 +4333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &412868507
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4988,6 +4988,10 @@ PrefabInstance:
     - target: {fileID: 7636225460913150264, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_Name
       value: Astronomy Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636225460913150264, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7454,7 +7458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &610723637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7899,7 +7903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6b512575756ac4d9b122c5cb84c6ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.17
+      value: 3.58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6b512575756ac4d9b122c5cb84c6ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7907,7 +7911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6b512575756ac4d9b122c5cb84c6ce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.34
+      value: 6.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6b512575756ac4d9b122c5cb84c6ce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20470,7 +20474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6b512575756ac4d9b122c5cb84c6ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: 0.45999986
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e6b512575756ac4d9b122c5cb84c6ce, type: 3}
       propertyPath: m_LocalPosition.y
