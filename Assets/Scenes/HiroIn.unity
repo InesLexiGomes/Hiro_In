@@ -2459,7 +2459,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1739197807}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: HomeMenu
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5822,6 +5822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovementScript: {fileID: 38619864}
   playerInteractionScript: {fileID: 38619863}
+  pauseMenu: {fileID: 1739197805}
   interactionPanel: {fileID: 1594673293}
   inventorySlotsContainer: {fileID: 50334569}
   inventoryIconsContainer: {fileID: 961558955}
@@ -22491,7 +22492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1739197806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22528,7 +22529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192b6a5c94e16f74d86fdb242ac8b3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1739197805}
+  uIManager: {fileID: 473727907}
 --- !u!1 &1743113016
 GameObject:
   m_ObjectHideFlags: 0

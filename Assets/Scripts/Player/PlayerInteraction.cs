@@ -20,6 +20,10 @@ public class PlayerInteraction : MonoBehaviour
     {
         UpdateCurrentInteractive();
         CheckForPlayerInteraction();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            uiManager.PauseGame();
+        }
     }
 
     private void UpdateCurrentInteractive()
