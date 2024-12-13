@@ -1,8 +1,8 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class Book : MonoBehaviour
+public class BookUI : MonoBehaviour
 {
     [SerializeField] float pageSpeed = 0.5f;
     [SerializeField] List<Transform> pagesFront;
@@ -12,7 +12,6 @@ public class Book : MonoBehaviour
     [SerializeField] GameObject backButton;
     [SerializeField] GameObject forwardButton;
     [SerializeField] private UIManager uiManager;
-    [SerializeField] private GameObject bookUI;
 
     private bool rotateForward = true;
 
@@ -23,10 +22,10 @@ public class Book : MonoBehaviour
 
     public void InitialState()
     {
-        for (int i=0; i<pagesFront.Count; i++)
+        for (int i = 0; i < pagesFront.Count; i++)
         {
-            pagesFront[i].transform.rotation=Quaternion.identity;
-            pagesBack[i].transform.rotation=Quaternion.identity;
+            pagesFront[i].transform.rotation = Quaternion.identity;
+            pagesBack[i].transform.rotation = Quaternion.identity;
         }
         pagesFront[0].SetAsLastSibling();
         backButton.SetActive(false);
@@ -72,12 +71,12 @@ public class Book : MonoBehaviour
         if (index - 1 == -1)
         {
             backButton.SetActive(false); //if the page is first turn off the back button
-        }      
+        }
     }
     private void Quit()
     {
         uiManager.EnablePlayer();
-        bookUI.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     private void Update()

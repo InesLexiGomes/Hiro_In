@@ -5171,6 +5171,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 604304469000173484, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_Name
+      value: Button Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 717631016468999566, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_Name
+      value: Page 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106560552974317741, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_Name
+      value: Page 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5194502526444785851, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_Name
+      value: Page 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174068371405833284, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_Name
+      value: Page 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7232420475540253527, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: bookUI
       value: 
@@ -5190,35 +5210,39 @@ PrefabInstance:
     - target: {fileID: 7868156899939307445, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1192604543}
+      objectReference: {fileID: 1383370398}
     - target: {fileID: 7868156899939307445, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RotateBack
       objectReference: {fileID: 0}
     - target: {fileID: 7868156899939307445, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Book, Assembly-CSharp
+      value: BookUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9019136454557517731, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1192604543}
+      objectReference: {fileID: 1383370398}
     - target: {fileID: 9019136454557517731, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RotateForward
       objectReference: {fileID: 0}
     - target: {fileID: 9019136454557517731, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Book, Assembly-CSharp
+      value: BookUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9128839429425393716, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_Name
+      value: Button Forward
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7232420475540253527, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6131297719588537819, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 7636225460913150264, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1192604543}
+      addedObject: {fileID: 1383370398}
   m_SourcePrefab: {fileID: 100100000, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
 --- !u!224 &440552347 stripped
 RectTransform:
@@ -5228,6 +5252,36 @@ RectTransform:
 --- !u!1 &440552348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7636225460913150264, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+  m_PrefabInstance: {fileID: 440552346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &440552349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 604304469000173484, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+  m_PrefabInstance: {fileID: 440552346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &440552350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9128839429425393716, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+  m_PrefabInstance: {fileID: 440552346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &440552351 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7629120796814182025, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+  m_PrefabInstance: {fileID: 440552346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &440552352 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2496360782522970672, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+  m_PrefabInstance: {fileID: 440552346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &440552353 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6748804644661694779, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+  m_PrefabInstance: {fileID: 440552346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &440552354 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6728443544716378408, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
   m_PrefabInstance: {fileID: 440552346}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &442935499
@@ -14296,23 +14350,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183166143}
   m_Mesh: {fileID: 8685440553455405540, guid: 92426b2129877b04595ce0b7f746a75d, type: 3}
---- !u!1 &1192604541 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6131297719588537819, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
-  m_PrefabInstance: {fileID: 440552346}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1192604543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192604541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4126a26fd8db784488d763fd91d3d5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1194315844
 GameObject:
   m_ObjectHideFlags: 0
@@ -16538,6 +16575,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367513595}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1383370398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440552348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4126a26fd8db784488d763fd91d3d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pageSpeed: 0.5
+  pagesFront:
+  - {fileID: 440552354}
+  - {fileID: 440552353}
+  pagesBack:
+  - {fileID: 440552352}
+  - {fileID: 440552351}
+  backButton: {fileID: 440552349}
+  forwardButton: {fileID: 440552350}
+  uiManager: {fileID: 473727907}
 --- !u!1 &1383834991
 GameObject:
   m_ObjectHideFlags: 0
@@ -22432,7 +22491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1739197806
 RectTransform:
   m_ObjectHideFlags: 0
