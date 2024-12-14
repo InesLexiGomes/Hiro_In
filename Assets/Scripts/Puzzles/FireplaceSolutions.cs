@@ -29,8 +29,35 @@ public class FireplaceSolutions :MonoBehaviour
             false, true, false, false, true,
             false, false, false, false, false,
             false, false, true, false, false
+        },
+
+        new bool[]
+        {
+            true, false, true, false, false,
+            false, false, false, false, false,
+            true, false, false, true, false,
+            false, false, false, false, false,
+            false, true, false, false, true
+        },
+
+        new bool[]
+        {
+            true, false, true, false, false,
+            false, false, false, true, false,
+            true, false, false, false, true,
+            false, false, false, false, false,
+            false, false, true, false, false
+        },
+
+        new bool[]
+        {
+            true, false, true, false, false,
+            false, false, false, true, false,
+            true, false, false, false, true,
+            false, true, false, false, false,
+            false, false, false, false, false
         }
-    };
+};
 
     public readonly bool[][] cancerArray = new bool[][]
     {
