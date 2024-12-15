@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Book4
   m_EditorClassIdentifier: 
   type: 1
-  startsOn: 1
+  startsOn: 0
   inventoryName: 
   inventoryDescription: 
   inventoryIcon: {fileID: 0}
   requirements:
   - {fileID: 11400000, guid: db06770f52603154fb77a485889ae40e, type: 2}
-  - {fileID: 11400000, guid: 4ae00f4749a723d48873311aaef82ff6, type: 2}
   requirementsMessage: It seems to be stuck.
   interactionMessages:
   - Pull

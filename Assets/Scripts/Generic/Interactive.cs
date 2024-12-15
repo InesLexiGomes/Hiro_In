@@ -9,7 +9,7 @@ public class Interactive : MonoBehaviour
     private List<Interactive>   requirements;
     private List<Interactive>   dependents;
     private Animator            animator;
-    private bool                requirementsMet;
+    public bool                 requirementsMet;
     private int                 interactionCount;
 
     public InteractiveData      interactiveData;
