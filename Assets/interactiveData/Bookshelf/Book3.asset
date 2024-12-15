@@ -19,6 +19,7 @@ MonoBehaviour:
   inventoryIcon: {fileID: 0}
   requirements:
   - {fileID: 11400000, guid: 9c0e406ac374ac84788cd79d70691e80, type: 2}
-  requirementsMessage: 
+  - {fileID: 11400000, guid: 4ae00f4749a723d48873311aaef82ff6, type: 2}
+  requirementsMessage: It seems to be stuck.
   interactionMessages:
   - Pull
