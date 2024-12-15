@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LockInteraction : SpecialInteractions
 {
@@ -8,6 +9,7 @@ public class LockInteraction : SpecialInteractions
     [SerializeField] private GameObject lockUI;
     [SerializeField] private UIManager  uiManager;
     [SerializeField] private CarriageInteraction carriageInteraction;
+    [SerializeField] private Image tripEffect;
 
     private void Start()
     {
@@ -15,6 +17,7 @@ public class LockInteraction : SpecialInteractions
         itemToLock.SetActive(false);
         skylights.SetActive(false);
         lockUI.SetActive(false);
+        tripEffect.enabled = false;
     }
 
     private void Update()
@@ -35,5 +38,6 @@ public class LockInteraction : SpecialInteractions
         gameObject.SetActive(false);
         itemToLock.SetActive(true);
         skylights.SetActive(true);
+        tripEffect.enabled = true;
     }
 }

@@ -8612,6 +8612,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 405813277}
     - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: tripEffect
+      value: 
+      objectReference: {fileID: 943525998}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
       propertyPath: carriageInteraction
       value: 
       objectReference: {fileID: 608067532}
