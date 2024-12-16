@@ -9,6 +9,7 @@ public class LockInteraction : SpecialInteractions
     [SerializeField] private GameObject lockUI;
     [SerializeField] private UIManager  uiManager;
     [SerializeField] private CarriageInteraction carriageInteraction;
+    [SerializeField] private TrainAudio trainAudio;
     [SerializeField] private Image tripEffect;
 
     private void Start()
@@ -39,5 +40,6 @@ public class LockInteraction : SpecialInteractions
         itemToLock.SetActive(true);
         skylights.SetActive(true);
         tripEffect.enabled = true;
+        trainAudio.TrainCompletePuzzle();
     }
 }
