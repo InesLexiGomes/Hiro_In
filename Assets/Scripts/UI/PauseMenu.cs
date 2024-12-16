@@ -9,11 +9,6 @@ public class PauseMenu : MonoBehaviour
 
     private bool exit = false; // False is used to go to the main menu while true is used to exit
 
-    private void Start()
-    {
-        confirmScreen.SetActive(false);
-        gameObject.SetActive(false);
-    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private PlayerInteraction playerInteractionScript;
 
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject confirmScreen;
     [SerializeField] private GameObject interactionPanel;
     [SerializeField] private GameObject inventorySlotsContainer;
     [SerializeField] private GameObject inventoryIconsContainer;
@@ -26,6 +27,8 @@ public class UIManager : MonoBehaviour
         inventoryIcons = inventoryIconsContainer.GetComponentsInChildren<Image>();
         selectedSlotIndex = -1;
 
+        pauseMenu.SetActive(false);
+        confirmScreen.SetActive(false);
         HideInteractionPanel();
         HideInventoryIcons();
         ResetInventorySlots();
