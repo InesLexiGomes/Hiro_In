@@ -1,27 +1,59 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class PauseMenu : MonoBehaviour
 {
-
     [SerializeField] UIManager uIManager;
-    public void Resume()
-    {
-        gameObject.SetActive(false);
-        uIManager.EnablePlayer();
-    }
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-    public void Exit()
-    {
-        Application.Quit();
-    }
+    [SerializeField] GameObject confirmScreen;
 
-    public void Update()
+    private bool exit = false; // False is used to go to the main menu while true is used to exit
+
+    private void Start()
+    {
+        confirmScreen.SetActive(false);
+        gameObject.SetActive(false);
+    }
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             Resume();
     }
 
+    public void Resume()
+    {
+        gameObject.SetActive(false);
+        confirmScreen.SetActive(false);
+        uIManager.EnablePlayer();
+    }
+
+    public void MainMenu()
+    {
+        exit = false;
+        ConfirmScreen();
+    }
+
+    public void Exit()
+    {
+        exit = true;
+        ConfirmScreen();
+    }
+
+    private void ConfirmScreen()
+    {
+        confirmScreen.SetActive(true);
+    }
+
+    public void Confirm()
+    {
+        if (exit)
+            Application.Quit();
+        else
+            SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Cancel()
+    {
+        confirmScreen.SetActive(false);
+    }
 }

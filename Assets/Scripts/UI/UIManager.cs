@@ -26,7 +26,6 @@ public class UIManager : MonoBehaviour
         inventoryIcons = inventoryIconsContainer.GetComponentsInChildren<Image>();
         selectedSlotIndex = -1;
 
-        pauseMenu.SetActive(false);
         HideInteractionPanel();
         HideInventoryIcons();
         ResetInventorySlots();
