@@ -15,6 +15,7 @@ public class FireplaceUI : MonoBehaviour
     [SerializeField] private Color              lightsColor;
     [SerializeField] private CarriageInteraction carriageInteraction;
     [SerializeField] private TrainAudio trainAudio;
+    [SerializeField] private Image tripEffect;
 
     public int CoinCount = 8;
     private int currentConstelation = 1;
@@ -82,6 +83,7 @@ public class FireplaceUI : MonoBehaviour
         Quit();
         carriageInteraction.Activate();
         trainAudio.TrainCompletePuzzle();
+        tripEffect.enabled = false;
 
         // Add Visual indicator
     }

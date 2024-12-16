@@ -4968,6 +4968,7 @@ MonoBehaviour:
   lightsColor: {r: 0.062035322, g: 1, b: 0, a: 1}
   carriageInteraction: {fileID: 1629836360}
   trainAudio: {fileID: 1899871839}
+  tripEffect: {fileID: 943525998}
   CoinCount: 8
 --- !u!114 &412868509
 MonoBehaviour:
