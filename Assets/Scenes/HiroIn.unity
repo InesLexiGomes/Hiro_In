@@ -9162,9 +9162,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 943525998}
     - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 908726944}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: vinyls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
       propertyPath: carriageInteraction
       value: 
       objectReference: {fileID: 608067532}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: 'vinyls.Array.data[0]'
+      value: 
+      objectReference: {fileID: 653170154}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: 'vinyls.Array.data[1]'
+      value: 
+      objectReference: {fileID: 500274377}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: 'vinyls.Array.data[2]'
+      value: 
+      objectReference: {fileID: 205790330}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: 'vinyls.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1306260368}
     - target: {fileID: 4708895300149033217, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.333
@@ -12137,6 +12161,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 433ec1f4d5229f2419bf7dab8b39c979, type: 3}
   m_PrefabInstance: {fileID: 898344164}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &908726944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7417041041746278768, guid: 80405ed1179fe3441a0c910c49f4fef8, type: 3}
+  m_PrefabInstance: {fileID: 38619862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03179525b9060474299b36b224b83ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &912301313
 GameObject:
   m_ObjectHideFlags: 0
@@ -25207,7 +25242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1899871838}
-  audio: {fileID: 8300000, guid: 6b2283acfe844af4aa24c43572ee9926, type: 3}
+  audioNormal: {fileID: 0}
   audioAlt: {fileID: 8300000, guid: 23734795eadab12419a1e2d4fccdb1f4, type: 3}
 --- !u!1 &1899895057
 GameObject:

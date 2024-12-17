@@ -11,6 +11,9 @@ public class LockInteraction : SpecialInteractions
     [SerializeField] private CarriageInteraction carriageInteraction;
     [SerializeField] private TrainAudio trainAudio;
     [SerializeField] private Image tripEffect;
+    [SerializeField] private PlayerInventory playerInventory;
+    [SerializeField] private GameObject[] vinyls;
+    [SerializeField] private GramophoneInteractions gramophone;
 
     private void Start()
     {
@@ -41,5 +44,14 @@ public class LockInteraction : SpecialInteractions
         skylights.SetActive(true);
         tripEffect.enabled = true;
         trainAudio.TrainCompletePuzzle();
+        ClearVinyls();
+    }
+
+    private void ClearVinyls()
+    {
+        gramophone.StopMusic();
+        playerInventory.ClearInventory();
+        foreach (GameObject vinyl in vinyls)
+            vinyl.SetActive(false);
     }
 }

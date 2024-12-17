@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Reflection;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
@@ -84,5 +85,12 @@ public class PlayerInventory : MonoBehaviour
         for (int i = 0; i < inventory.Count; ++i)
             if (Input.GetKeyDown(KeyCode.Alpha1 + i) && i != selectedSlotIndex)
                 SelectInventorySlot(i);
+    }
+
+    public void ClearInventory()
+    {
+        inventory.Clear();
+        selectedSlotIndex = -1;
+        uiManager.HideInventoryIcons();
     }
 }
