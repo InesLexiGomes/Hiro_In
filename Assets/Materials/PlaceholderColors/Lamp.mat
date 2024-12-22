@@ -30,7 +30,7 @@ Material:
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
@@ -45,13 +45,17 @@ Material:
     m_Ints: []
     m_Floats:
     - _Blend: 2
-    - _Cull: 0
+    - _Cull: 2
     - _DstBlend: 1
     - _DstBlendAlpha: 1
+    - _Metallic: 0.13
+    - _Smoothness: 0.64
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Surface: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.90607727, b: 0.69803923, a: 0.13725491}
-    - _Color: {r: 1, g: 0.90607727, b: 0.69803923, a: 0.13725491}
+    - _BaseColor: {r: 0.94716984, g: 0.8578142, b: 0.6630188, a: 0.13725491}
+    - _Color: {r: 0.94716984, g: 0.8578142, b: 0.6630188, a: 0.13725491}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
