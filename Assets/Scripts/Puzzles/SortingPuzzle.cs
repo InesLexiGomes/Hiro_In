@@ -3,17 +3,21 @@ using System.Collections.Generic;
 
 public class SortingPuzzle : MonoBehaviour
 {
-    [SerializeField] private int[] solution;
+    [Header("Main")]
 
+    [SerializeField] private int[] solution;
     // List of attempts the player has made
     private List<int> attempts = new List<int>();
+
+    [Header("Reset")]
+    [SerializeField] private BookSortInteraction[] books;
 
     //Check Solution and reset if attempts are equal or bigger lenght
     private void CheckSolution()
     {
         // Safety in case it exceeds the lenght of the solution
         if (attempts.Count > solution.Length)
-            attempts = new List<int>();
+            ResetPuzzle();
 
         if (attempts.Count == solution.Length)
         {
@@ -21,8 +25,7 @@ public class SortingPuzzle : MonoBehaviour
             {
                 // Execute finish puzzle code here
             }
-            else
-                attempts = new List<int>();
+            else ResetPuzzle();
         }
     }
 
@@ -40,5 +43,13 @@ public class SortingPuzzle : MonoBehaviour
     {
         attempts.Add(index);
         CheckSolution();
+    }
+
+    private void ResetPuzzle()
+    {
+        foreach(BookSortInteraction book in books)
+        {
+            book.ResetBook();
+        }
     }
 }
