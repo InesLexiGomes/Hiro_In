@@ -5,6 +5,8 @@ public class SortingPuzzle : MonoBehaviour
 {
     [Header("Main")]
 
+    [SerializeField] private Animator animator;
+    // Correct solution player needs to input
     [SerializeField] private int[] solution;
     // List of attempts the player has made
     private List<int> attempts = new List<int>();
@@ -23,7 +25,8 @@ public class SortingPuzzle : MonoBehaviour
         {
             if (Compare())
             {
-                // Execute finish puzzle code here
+                Debug.Log("Finished");
+                animator.Play("BookshelfAwake");
             }
             else ResetPuzzle();
         }

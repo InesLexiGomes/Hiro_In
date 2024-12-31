@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Book1
   m_EditorClassIdentifier: 
   type: 1
-  startsOn: 0
+  startsOn: 1
   inventoryName: 
   inventoryDescription: 
   inventoryIcon: {fileID: 0}

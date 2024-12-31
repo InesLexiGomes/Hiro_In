@@ -18,8 +18,10 @@ public class BookSortInteraction : SpecialInteractions
         // If it doesn't have an interactive it was never interacted with and doesn't need reseting
         if (bookInteractive != null)
         {
-            // Add code to reset the book
-            // make it so next time it won't check if it hasn't been interacted with
+            // Allows it to interact again
+            bookInteractive.isOn = true;
+
+            // Make it so next time it won't check if it hasn't been interacted with
             bookInteractive = null;
         }
     }
