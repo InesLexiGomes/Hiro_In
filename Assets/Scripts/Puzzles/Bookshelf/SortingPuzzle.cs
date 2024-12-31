@@ -50,6 +50,7 @@ public class SortingPuzzle : MonoBehaviour
 
     private void ResetPuzzle()
     {
+        attempts = new List<int>();
         foreach(BookSortInteraction book in books)
         {
             book.ResetBook();
