@@ -49,8 +49,6 @@ public class PaintingInteractions : SpecialInteractions
 
     private void Finish()
     {
-        foreach (Interactive book in books)
-            book.isOn = true;
         gameObject.SetActive(false);
         carriageInteraction.Activate();
         trainAudio.TrainStop();
