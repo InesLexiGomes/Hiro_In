@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1ee5d790967a7bd42a71f0a2883b004c
+guid: 011438cc91e6f4246b5fa80224ee67b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 18, y: 21, z: 13, w: 14}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,23 +97,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireplaceUI_0
+      name: Dial_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1084
-        height: 936
+        x: 19
+        y: 21
+        width: 65
+        height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90d49b1e8f15d5c44b6a164a56710233
-      internalID: 384343836
+      spriteID: eb3da5655749ee14b872f51d42e2c6d1
+      internalID: 1947724968
       vertices: []
       indices: 
       edges: []
@@ -122,8 +122,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9307942542dc4fc40877e29d6fe6e8b0
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FireplaceUI_0: 384343836
+      Dial_0: 1947724968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
