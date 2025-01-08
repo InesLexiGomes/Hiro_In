@@ -9306,6 +9306,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 473727907}
     - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
+      propertyPath: gramophone
+      value: 
+      objectReference: {fileID: 1835979495}
+    - target: {fileID: 88277151809171914, guid: ed0798df4ff305f43a16b59aeb5bb505, type: 3}
       propertyPath: itemToLock
       value: 
       objectReference: {fileID: 405813277}
