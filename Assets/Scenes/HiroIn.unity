@@ -5531,13 +5531,54 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.95757
       objectReference: {fileID: 0}
+    - target: {fileID: 3061059732557441246, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.048936017
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061059732557441246, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99880195
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061059732557441246, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061059732557441246, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 301
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061059732557441246, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061059732557441246, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5.61
+      objectReference: {fileID: 0}
     - target: {fileID: 3106560552974317741, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_Name
       value: Page 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3790555098367863587, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 5194502526444785851, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_Name
       value: Page 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429597494977855068, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_text
+      value: "THE BOOK OF THE STARS\n\n\nWritten by\nAndrew Stevens\n\n\n\n\n\n\nLondon
+        \n\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429597494977855068, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429597494977855068, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6174068371405833284, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_Name
@@ -5551,6 +5592,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 473727907}
+    - target: {fileID: 7607227940042874800, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 7636225460913150264, guid: ea0cb0b9a2068824a8ed154f2b9c4134, type: 3}
       propertyPath: m_Name
       value: Astronomy Book
