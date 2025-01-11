@@ -20,4 +20,8 @@ public class CatPhrases : MonoBehaviour
     [Header("Train/Bookshelf Puzzle")]
     public string[] TrainBanter;
     public string[] TrainHints;
+
+    [Header("Afer Finishing all puzzles")]
+    public string[] WinBanter;
+    public string[] WinHints;
 }

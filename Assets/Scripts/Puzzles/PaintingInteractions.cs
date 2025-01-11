@@ -4,11 +4,12 @@ using UnityEngine.Splines;
 
 public class PaintingInteractions : SpecialInteractions
 {
-    [SerializeField] private Interactive[] paintingSlots;
-    [SerializeField] private Interactive[] books;
-    [SerializeField] private SplineAnimate[] train;
-    [SerializeField] private CarriageInteraction carriageInteraction;
-    [SerializeField] private TrainAudio trainAudio;
+    [SerializeField] private Interactive[]          paintingSlots;
+    [SerializeField] private Interactive[]          books;
+    [SerializeField] private CatUI                  catUI;
+    [SerializeField] private SplineAnimate[]        train;
+    [SerializeField] private CarriageInteraction    carriageInteraction;
+    [SerializeField] private TrainAudio             trainAudio;
 
     private bool finish = false;
 
@@ -50,6 +51,7 @@ public class PaintingInteractions : SpecialInteractions
     private void Finish()
     {
         gameObject.SetActive(false);
+        catUI.NextPuzzle(3);
         carriageInteraction.Activate();
         trainAudio.TrainStop();
         foreach (SplineAnimate trainPart in train)

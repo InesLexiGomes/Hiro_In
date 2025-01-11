@@ -16,6 +16,7 @@ public class SortingPuzzle : MonoBehaviour
 
     [Header("Finish")]
     [SerializeField] private GameObject portal;
+    [SerializeField] private CatUI catUI;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class SortingPuzzle : MonoBehaviour
                 Debug.Log("Finished");
                 animator.Play("BookshelfAwake");
                 portal.SetActive(true);
+                catUI.NextPuzzle(4);
             }
             else ResetPuzzle();
         }

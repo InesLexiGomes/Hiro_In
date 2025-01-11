@@ -1,21 +1,25 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class CatUI : MonoBehaviour
 {
     [SerializeField] private CatPhrases catPhrases;
-    [SerializeField] private Text catText;
+    [SerializeField] private TextMeshProUGUI catText;
+    [SerializeField] private UIManager uiManager;
 
-    [Header("Used only for testing")]
     // After each puzzle increase by 1
-    [SerializeField] private int currentPuzzle;
+    private int currentPuzzle;
     // After asking for a hint increase by 1 and reset to 0 when at next puzzle
-    [SerializeField] private int hintCount;
+    private int hintCount;
 
     private void Start()
     {
         currentPuzzle = 0;
         hintCount = 0;
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Quit();
     }
 
     public void SwapBanterText()
@@ -28,13 +32,15 @@ public class CatUI : MonoBehaviour
         switch (currentPuzzle)
         {
             case (0):
-                return CheckBanterFromArray(catPhrases.GramophoneHints);
+                return CheckBanterFromArray(catPhrases.GramophoneBanter);
             case (1):
-                return CheckBanterFromArray(catPhrases.FireplaceHints);
+                return CheckBanterFromArray(catPhrases.FireplaceBanter);
             case (2):
-                return CheckBanterFromArray(catPhrases.PaintingHints);
+                return CheckBanterFromArray(catPhrases.PaintingBanter);
             case (3):
-                return CheckBanterFromArray(catPhrases.TrainHints);
+                return CheckBanterFromArray(catPhrases.TrainBanter);
+            case (4):
+                return CheckBanterFromArray(catPhrases.WinBanter);
             default:
                 return "";
         }
@@ -63,6 +69,8 @@ public class CatUI : MonoBehaviour
                 return CheckHintFromArray(catPhrases.PaintingHints);
             case (3):
                 return CheckHintFromArray(catPhrases.TrainHints);
+            case (4):
+                return CheckHintFromArray(catPhrases.WinHints);
             default:
                 return "";
         }
@@ -79,5 +87,10 @@ public class CatUI : MonoBehaviour
     public void NextPuzzle(int puzzle)
     {
         currentPuzzle = puzzle;
+    }
+    private void Quit()
+    {
+        uiManager.EnablePlayer();
+        this.gameObject.SetActive(false);
     }
 }

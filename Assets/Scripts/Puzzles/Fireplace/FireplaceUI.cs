@@ -5,17 +5,18 @@ using UnityEngine.UI;
 
 public class FireplaceUI : MonoBehaviour
 {
-    [SerializeField] private GameObject         coinHolder;
-    [SerializeField] private UIManager          uiManager;
-    [SerializeField] private Interactive        fireplaceInteractive;
-    [SerializeField] private FireplaceSolutions solutions;
-    [SerializeField] private GameObject         paintingsNormal;
-    [SerializeField] private GameObject         paintingsChanged;
-    [SerializeField] private Image[]            fireplaceLights;
-    [SerializeField] private Color              lightsColor;
-    [SerializeField] private CarriageInteraction carriageInteraction;
-    [SerializeField] private TrainAudio trainAudio;
-    [SerializeField] private Image tripEffect;
+    [SerializeField] private GameObject             coinHolder;
+    [SerializeField] private UIManager              uiManager;
+    [SerializeField] private Interactive            fireplaceInteractive;
+    [SerializeField] private FireplaceSolutions     solutions;
+    [SerializeField] private GameObject             paintingsNormal;
+    [SerializeField] private GameObject             paintingsChanged;
+    [SerializeField] private Image[]                fireplaceLights;
+    [SerializeField] private Color                  lightsColor;
+    [SerializeField] private CatUI                  catUI;
+    [SerializeField] private CarriageInteraction    carriageInteraction;
+    [SerializeField] private TrainAudio             trainAudio;
+    [SerializeField] private Image                  tripEffect;
 
     public int CoinCount = 8;
     private int currentConstelation = 1;
@@ -81,6 +82,7 @@ public class FireplaceUI : MonoBehaviour
             //paintingNormal.SetActive(false);
         paintingsChanged.SetActive(true);
         Quit();
+        catUI.NextPuzzle(2);
         carriageInteraction.Activate();
         trainAudio.TrainCompletePuzzle();
         tripEffect.enabled = false;
