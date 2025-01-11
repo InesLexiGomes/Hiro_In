@@ -19,4 +19,5 @@ MonoBehaviour:
   inventoryIcon: {fileID: 687881190, guid: 602f79e7a98f7534f95323df3aeb7e7a, type: 3}
   requirements: []
   requirementsMessage: 
-  interactionMessages: []
+  interactionMessages:
+  - Use coins.

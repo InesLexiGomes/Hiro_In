@@ -14,6 +14,14 @@ public class SortingPuzzle : MonoBehaviour
     [Header("Reset")]
     [SerializeField] private BookSortInteraction[] books;
 
+    [Header("Finish")]
+    [SerializeField] private GameObject portal;
+
+    private void Start()
+    {
+        portal.SetActive(false);
+    }
+
     //Check Solution and reset if attempts are equal or bigger lenght
     private void CheckSolution()
     {
@@ -27,6 +35,7 @@ public class SortingPuzzle : MonoBehaviour
             {
                 Debug.Log("Finished");
                 animator.Play("BookshelfAwake");
+                portal.SetActive(true);
             }
             else ResetPuzzle();
         }

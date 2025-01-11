@@ -19,4 +19,5 @@ MonoBehaviour:
   inventoryIcon: {fileID: 21300000, guid: 1a6d7a78a529c8745aa66fe262d0bbd4, type: 3}
   requirements: []
   requirementsMessage: 
-  interactionMessages: []
+  interactionMessages:
+  - Pick up.
