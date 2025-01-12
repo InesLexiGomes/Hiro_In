@@ -8927,7 +8927,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8594733630880720615, guid: ecb27a0586a26eb448031c287d006c12, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 811d59feb3c7e4c47b3198367edc1762, type: 2}
+    - target: {fileID: -7248189679557542789, guid: ecb27a0586a26eb448031c287d006c12, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 811d59feb3c7e4c47b3198367edc1762, type: 2}
     - target: {fileID: -4518161377056429119, guid: ecb27a0586a26eb448031c287d006c12, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 811d59feb3c7e4c47b3198367edc1762, type: 2}
+    - target: {fileID: -3453743593183190252, guid: ecb27a0586a26eb448031c287d006c12, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 811d59feb3c7e4c47b3198367edc1762, type: 2}
@@ -8935,6 +8947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireplace 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7911620726339849041, guid: ecb27a0586a26eb448031c287d006c12, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 811d59feb3c7e4c47b3198367edc1762, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
