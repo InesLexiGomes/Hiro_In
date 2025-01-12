@@ -943,7 +943,6 @@ Transform:
   m_Children:
   - {fileID: 766615358}
   - {fileID: 417612547}
-  - {fileID: 647097978}
   m_Father: {fileID: 1578890635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &83091933
@@ -5358,7 +5357,7 @@ MonoBehaviour:
   - {fileID: 437523552}
   - {fileID: 1517308215}
   lightsColor: {r: 0.062035322, g: 1, b: 0, a: 1}
-  catUI: {fileID: 1498795996}
+  catUI: {fileID: 0}
   carriageInteraction: {fileID: 1629836360}
   trainAudio: {fileID: 1899871839}
   tripEffect: {fileID: 943525998}
@@ -8200,6 +8199,7 @@ Transform:
   - {fileID: 711948589}
   - {fileID: 229742052}
   - {fileID: 860639203}
+  - {fileID: 647097978}
   - {fileID: 1129537514}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9718,7 +9718,7 @@ GameObject:
   - component: {fileID: 647097980}
   - component: {fileID: 647097979}
   m_Layer: 0
-  m_Name: computer_ClaraAntunes_22303299_V2:compScreen
+  m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9732,12 +9732,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647097977}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0012590451, y: 0.0017904418, z: -0.0013564687}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.12528102, y: 1.7149463, z: -2.2834966}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 75128533}
+  m_Father: {fileID: 567229735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &647097979
 MeshRenderer:
@@ -11858,6 +11858,127 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808282827}
   m_Mesh: {fileID: 5405894296050905453, guid: 92426b2129877b04595ce0b7f746a75d, type: 3}
+--- !u!1 &826085621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826085622}
+  - component: {fileID: 826085624}
+  - component: {fileID: 826085623}
+  m_Layer: 0
+  m_Name: Area Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &826085622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826085621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.22121826, y: 0.7100394, z: -0.1988519, w: 0.6382511}
+  m_LocalPosition: {x: -11.004, y: 12.64, z: 38.171}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1380262017}
+  m_LocalEulerAnglesHint: {x: 34.386, y: 97.393, z: 4.191}
+--- !u!114 &826085623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826085621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &826085624
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826085621}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3.52
+  m_Range: 6
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &827566301
 GameObject:
   m_ObjectHideFlags: 0
@@ -15954,7 +16075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbada96794577d54b808f3de77b0aff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialInteractions: {fileID: 1129537516}
+  specialInteractions: {fileID: 0}
   requirementsMet: 0
   interactiveData: {fileID: 11400000, guid: 0a77f51c168883343926fbe2162cb0f4, type: 2}
   playerInventory: {fileID: 0}
@@ -18625,6 +18746,7 @@ Transform:
   - {fileID: 174768609}
   - {fileID: 872380714}
   - {fileID: 1413459922}
+  - {fileID: 826085622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1383370398
@@ -18964,7 +19086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1413459922
 Transform:
   m_ObjectHideFlags: 0
@@ -20023,7 +20145,7 @@ MonoBehaviour:
   - {fileID: 467747548}
   - {fileID: 1275132385}
   portal: {fileID: 860639202}
-  catUI: {fileID: 1498795996}
+  catUI: {fileID: 0}
 --- !u!95 &1480264830
 Animator:
   serializedVersion: 7
@@ -20210,10 +20332,8 @@ MonoBehaviour:
   - Implement TBanter
   TrainHints:
   - Implement THint
-  WinBanter:
-  - You won!!!
-  WinHints:
-  - Just leave!
+  WinBanter: []
+  WinHints: []
 --- !u!114 &1498795996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20227,8 +20347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catPhrases: {fileID: 1498795995}
-  catText: {fileID: 1951677654}
-  uiManager: {fileID: 473727907}
+  catText: {fileID: 0}
+  uiManager: {fileID: 0}
 --- !u!1 &1499641419
 GameObject:
   m_ObjectHideFlags: 0
