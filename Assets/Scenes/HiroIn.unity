@@ -5357,7 +5357,7 @@ MonoBehaviour:
   - {fileID: 437523552}
   - {fileID: 1517308215}
   lightsColor: {r: 0.062035322, g: 1, b: 0, a: 1}
-  catUI: {fileID: 0}
+  catUI: {fileID: 1498795996}
   carriageInteraction: {fileID: 1629836360}
   trainAudio: {fileID: 1899871839}
   tripEffect: {fileID: 943525998}
@@ -20145,7 +20145,7 @@ MonoBehaviour:
   - {fileID: 467747548}
   - {fileID: 1275132385}
   portal: {fileID: 860639202}
-  catUI: {fileID: 0}
+  catUI: {fileID: 1498795996}
 --- !u!95 &1480264830
 Animator:
   serializedVersion: 7

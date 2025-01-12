@@ -7,6 +7,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("HiroIn");
     }
 
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
