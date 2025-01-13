@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2863b2a36f136948915686bb0075b9d
+guid: 8e391dcc16695ef43bc4662f1470035c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Gramophone
-    second: {fileID: 2100000, guid: 2f47530b8064e6a4dae97d0df04a48e8, type: 2}
+      name: Glass
+    second: {fileID: 2100000, guid: eb1823ffe7b614f4c9267414569c82fe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 2f47530b8064e6a4dae97d0df04a48e8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface2
-    second: {fileID: 2100000, guid: 2f47530b8064e6a4dae97d0df04a48e8, type: 2}
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 064b1d4df84db504ea4f66b1a4c3ba04, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
