@@ -6912,7 +6912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingPuzzle: {fileID: 1480264829}
-  index: 3
+  index: 4
   animator: {fileID: 467747552}
   bookInteractive: {fileID: 467747550}
 --- !u!65 &467747549
@@ -15000,7 +15000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingPuzzle: {fileID: 1480264829}
-  index: 1
+  index: 3
   animator: {fileID: 938334113}
   bookInteractive: {fileID: 938334111}
 --- !u!65 &938334110
@@ -18850,7 +18850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingPuzzle: {fileID: 1480264829}
-  index: 4
+  index: 1
   animator: {fileID: 1275132387}
   bookInteractive: {fileID: 1275132386}
 --- !u!114 &1275132386
