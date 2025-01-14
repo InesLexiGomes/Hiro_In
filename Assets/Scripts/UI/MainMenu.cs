@@ -7,9 +7,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("HiroIn");
     }
 
-    public void OpenSettings()
+    public void OpenCredits()
     {
-        SceneManager.LoadScene("Settings");
+        SceneManager.LoadScene("Credits");
     }
 
     public void QuitGame()
