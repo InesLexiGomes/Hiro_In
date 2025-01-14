@@ -16,7 +16,7 @@ MonoBehaviour:
   startsOn: 1
   inventoryName: Coins
   inventoryDescription: 
-  inventoryIcon: {fileID: 687881190, guid: 602f79e7a98f7534f95323df3aeb7e7a, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: 602f79e7a98f7534f95323df3aeb7e7a, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages:
