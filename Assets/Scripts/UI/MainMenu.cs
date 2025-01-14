@@ -4,7 +4,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("HiroIn");
+        SceneManager.LoadScene("Cutscene");
     }
 
     public void OpenCredits()

@@ -5,8 +5,16 @@ public class Cutscene : MonoBehaviour
 {
     [SerializeField] private string sceneToLoad;
     [SerializeField] private float cutsceneTime;
+
+    private float startTime;
+
+    private void Start()
+    {
+        startTime = Time.time;
+    }
+
     void Update()
     {
-        if (Time.time >= cutsceneTime) SceneManager.LoadScene(sceneToLoad);
+        if (Time.time >= cutsceneTime+startTime) SceneManager.LoadScene(sceneToLoad);
     }
 }
