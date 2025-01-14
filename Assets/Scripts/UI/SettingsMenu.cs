@@ -12,14 +12,11 @@ public class SettingsMenu : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void Update()
-    {
-
-    }
-
     public void Confirm()
     {
         tripEffect.color = new Vector4(1, 1, 1, effectsSlider.value);
+
+        AudioListener.volume = soundSlider.value;
 
         gameObject.SetActive(false);
     }
