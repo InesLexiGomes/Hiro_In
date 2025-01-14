@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 24608778}
   slotNumber: 9
 --- !u!114 &24608777
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 83091937}
   slotNumber: 18
 --- !u!114 &83091936
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 84893052}
   slotNumber: 5
 --- !u!114 &84893051
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 112231375}
   slotNumber: 3
 --- !u!114 &112231374
@@ -1208,7 +1208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 127194271}
   slotNumber: 24
 --- !u!114 &127194270
@@ -3088,7 +3088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 222860003}
   slotNumber: 20
 --- !u!114 &222860002
@@ -3566,7 +3566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 252890109}
   slotNumber: 10
 --- !u!114 &252890108
@@ -4380,7 +4380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 311395818}
   slotNumber: 2
 --- !u!114 &311395817
@@ -5637,7 +5637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 409125184}
   slotNumber: 13
 --- !u!114 &409125183
@@ -8694,7 +8694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 554813202}
   slotNumber: 7
 --- !u!114 &554813201
@@ -9211,7 +9211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 598897869}
   slotNumber: 12
 --- !u!114 &598897868
@@ -11404,7 +11404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 699799624}
   slotNumber: 4
 --- !u!114 &699799623
@@ -12109,7 +12109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 744074183}
   slotNumber: 21
 --- !u!114 &744074182
@@ -12379,7 +12379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 746781992}
   slotNumber: 16
 --- !u!114 &746781991
@@ -13108,7 +13108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 827566305}
   slotNumber: 8
 --- !u!114 &827566304
@@ -15268,7 +15268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 952475098}
   slotNumber: 6
 --- !u!114 &952475097
@@ -19174,7 +19174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1291278206}
   slotNumber: 15
 --- !u!114 &1291278205
@@ -19850,7 +19850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1367354553}
   slotNumber: 22
 --- !u!114 &1367354552
@@ -20821,7 +20821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1413909096}
   slotNumber: 19
 --- !u!114 &1413909095
@@ -21182,7 +21182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1435020102}
   slotNumber: 11
 --- !u!114 &1435020101
@@ -21537,7 +21537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1469168180}
   slotNumber: 14
 --- !u!114 &1469168179
@@ -27714,7 +27714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1695896887}
   slotNumber: 17
 --- !u!114 &1695896886
@@ -29518,7 +29518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1838480982}
   slotNumber: 1
 --- !u!114 &1838480981
@@ -30533,7 +30533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1948626528}
   slotNumber: 23
 --- !u!114 &1948626527
@@ -30818,7 +30818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.49019608}
+  unselectedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   image: {fileID: 1954131872}
   slotNumber: 0
 --- !u!114 &1954131871
