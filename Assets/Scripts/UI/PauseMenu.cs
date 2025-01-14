@@ -6,6 +6,7 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] UIManager uIManager;
     [SerializeField] GameObject confirmScreen;
+    [SerializeField] GameObject settingsScreen;
 
     private bool exit = false; // False is used to go to the main menu while true is used to exit
 
@@ -20,6 +21,11 @@ public class PauseMenu : MonoBehaviour
         gameObject.SetActive(false);
         confirmScreen.SetActive(false);
         uIManager.EnablePlayer();
+    }
+
+    public void Settings()
+    {
+        settingsScreen.SetActive(true);
     }
 
     public void MainMenu()

@@ -1,16 +1,26 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
-    [SerializeField] private string sceneToLoad;
-    private void Update()
+    [SerializeField] private Image tripEffect;
+    [SerializeField] private Slider effectsSlider;
+    [SerializeField] private Slider soundSlider;
+
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) Back();
+        gameObject.SetActive(false);
     }
 
-    private void Back()
+    private void Update()
     {
-        SceneManager.LoadScene(sceneToLoad);
+
+    }
+
+    public void Confirm()
+    {
+        tripEffect.color = new Vector4(1, 1, 1, effectsSlider.value);
+
+        gameObject.SetActive(false);
     }
 }
