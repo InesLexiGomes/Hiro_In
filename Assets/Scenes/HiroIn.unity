@@ -14779,7 +14779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbada96794577d54b808f3de77b0aff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialInteractions: {fileID: 0}
+  specialInteractions: {fileID: 1129537516}
   requirementsMet: 0
   interactiveData: {fileID: 11400000, guid: 0a77f51c168883343926fbe2162cb0f4, type: 2}
   playerInventory: {fileID: 0}
@@ -18566,7 +18566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GramophoneBanter:
-  - Implement GBanter
+  - How Have you not figured the vinyls yet!
   GramophoneHints:
   - Implement GHint
   FireplaceBanter:
@@ -18596,8 +18596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catPhrases: {fileID: 1498795995}
-  catText: {fileID: 0}
-  uiManager: {fileID: 0}
+  catText: {fileID: 1951677654}
+  uiManager: {fileID: 473727907}
 --- !u!1 &1499641419
 GameObject:
   m_ObjectHideFlags: 0
