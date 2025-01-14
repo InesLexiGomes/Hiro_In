@@ -18566,27 +18566,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GramophoneBanter:
-<<<<<<< Updated upstream
   - How Have you not figured the vinyls yet!
-=======
-  - What a beautiful accent, I bet you can't even speak English well.
->>>>>>> Stashed changes
   GramophoneHints:
-  - Have you checked everywhere? Papa says you are messy when looking.
-  - Shut up and Listen, please :3
+  - Implement GHint
   FireplaceBanter:
-  - That's what happens when you take to much of... whatever that is.
-  - Do you believe in signs? I don't really care, I'm just being polite.
+  - Implement FBanter
   FireplaceHints:
-  - What's changed? Besides you clearly being on something now.
+  - Implement FHint
   PaintingBanter:
-  - This is a child's game, literally.
+  - Implement PBanter
   PaintingHints:
-  - Come on.. This is one it's not so hard, just look around.
+  - Implement PHint
   TrainBanter:
   - Implement TBanter
   TrainHints:
-  - There's a pattern here, like how cats do. Get it? Because I'm a cat?
+  - Implement THint
   WinBanter: []
   WinHints: []
 --- !u!114 &1498795996
