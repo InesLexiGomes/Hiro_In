@@ -5,23 +5,25 @@ using UnityEngine.UI;
 
 public class FireplaceUI : MonoBehaviour
 {
-    [SerializeField] private GameObject             coinHolder;
-    [SerializeField] private UIManager              uiManager;
-    [SerializeField] private Interactive            fireplaceInteractive;
-    [SerializeField] private FireplaceSolutions     solutions;
-    [SerializeField] private GameObject             paintingsNormal;
-    [SerializeField] private GameObject             paintingsChanged;
-    [SerializeField] private Image[]                fireplaceLights;
-    [SerializeField] private Color                  lightsColor;
-    [SerializeField] private CatUI                  catUI;
-    [SerializeField] private CarriageInteraction    carriageInteraction;
-    [SerializeField] private TrainAudio             trainAudio;
-    [SerializeField] private Image                  tripEffect;
+    [SerializeField] private GameObject coinHolder;
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private Interactive fireplaceInteractive;
+    [SerializeField] private FireplaceSolutions solutions;
+    [SerializeField] private GameObject paintingsNormal;
+    [SerializeField] private GameObject paintingsChanged;
+    [SerializeField] private Image[] fireplaceLights;
+    [SerializeField] private Color lightsColor;
+    [SerializeField] private CatUI catUI;
+    [SerializeField] private CarriageInteraction carriageInteraction;
+    [SerializeField] private TrainAudio trainAudio;
+    [SerializeField] private Image tripEffect;
+    [SerializeField] private CompletePuzzleAudio completePuzzleAudio;
 
     public int CoinCount = 8;
     private int currentConstelation = 1;
     private CoinSlotInteraction[] coinArray;
     private bool[] SolutionArray;
+    private bool isEqual = true;
 
     private void Awake()
     {
@@ -49,7 +51,7 @@ public class FireplaceUI : MonoBehaviour
             {
                 coin.GetCoinValue(SolutionArray);
             }
-            bool isEqual = true;
+            isEqual = true;
             for (int i = 0; i < SolutionArray.Length; i++)
             {
                 if (solution[i] != SolutionArray[i])
@@ -79,7 +81,7 @@ public class FireplaceUI : MonoBehaviour
     {
         fireplaceInteractive.isOn = false;
         // (GameObject paintingNormal in paintingsNormal)
-            //paintingNormal.SetActive(false);
+        //paintingNormal.SetActive(false);
         paintingsChanged.SetActive(true);
         Quit();
         catUI.NextPuzzle(2);
@@ -92,8 +94,8 @@ public class FireplaceUI : MonoBehaviour
 
     private void NextConstelation()
     {
-        fireplaceLights[currentConstelation-1].color = lightsColor;
-        
+        fireplaceLights[currentConstelation - 1].color = lightsColor;
+
         foreach (CoinSlotInteraction coin in coinArray) coin.RemoveCoin();
         currentConstelation++;
         CoinCount = 8;
@@ -101,19 +103,30 @@ public class FireplaceUI : MonoBehaviour
 
     public void DoButtonInteraction()
     {
-            switch (currentConstelation)
-            {
-                case 1:
-                    GetSolution(solutions.libraArray);
-                    break;
-                case 2:
-                    GetSolution(solutions.cancerArray);
-                    break;
-                case 3:
-                    GetSolution(solutions.ariesArray);
-                    break;
-                default:
-                    break;
-            }
+        switch (currentConstelation)
+        {
+            case 1:
+                GetSolution(solutions.libraArray);
+                CheckSoundToPlay();
+                break;
+            case 2:
+                GetSolution(solutions.cancerArray);
+                CheckSoundToPlay();
+                break;
+            case 3:
+                GetSolution(solutions.ariesArray);
+                CheckSoundToPlay();
+                break;
+            default:
+                break;
         }
+    }
+
+    private void CheckSoundToPlay()
+    {
+        if (isEqual)
+            completePuzzleAudio.PlayComplete();
+        else
+            completePuzzleAudio.PlayFailed();
+    }
 }

@@ -10,6 +10,7 @@ public class PaintingInteractions : SpecialInteractions
     [SerializeField] private SplineAnimate[]        train;
     [SerializeField] private CarriageInteraction    carriageInteraction;
     [SerializeField] private TrainAudio             trainAudio;
+    [SerializeField] private CompletePuzzleAudio completePuzzleAudio;
 
     private bool finish = false;
 
@@ -54,6 +55,7 @@ public class PaintingInteractions : SpecialInteractions
         catUI.NextPuzzle(3);
         carriageInteraction.Activate();
         trainAudio.TrainStop();
+        completePuzzleAudio.PlayComplete();
         foreach (SplineAnimate trainPart in train)
             trainPart.Loop = SplineAnimate.LoopMode.Once;
     }

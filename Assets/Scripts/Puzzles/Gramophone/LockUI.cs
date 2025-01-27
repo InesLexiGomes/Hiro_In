@@ -6,6 +6,8 @@ public class LockUI : MonoBehaviour
     [SerializeField] private UIManager                  uiManager;
     [SerializeField] private LockInteraction            lockInteraction;
     [SerializeField] private LockCombinationButton[]    buttons;
+    [SerializeField] private CompletePuzzleAudio completePuzzleAudio;
+
 
     public Color red;
     public Color blue;
@@ -31,6 +33,9 @@ public class LockUI : MonoBehaviour
         {
             lockInteraction.OpenLock();
             Quit();
+            completePuzzleAudio.PlayComplete();
         }
+        else
+            completePuzzleAudio.PlayFailed();
     }
 }

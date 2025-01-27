@@ -17,6 +17,7 @@ public class SortingPuzzle : MonoBehaviour
     [Header("Finish")]
     [SerializeField] private GameObject portal;
     [SerializeField] private CatUI catUI;
+    [SerializeField] private CompletePuzzleAudio completePuzzleAudio;
 
     private void Start()
     {
@@ -34,10 +35,7 @@ public class SortingPuzzle : MonoBehaviour
         {
             if (Compare())
             {
-                Debug.Log("Finished");
-                animator.Play("BookshelfAwake");
-                portal.SetActive(true);
-                catUI.NextPuzzle(4);
+                CompletePuzzle();
             }
             else ResetPuzzle();
         }
@@ -61,10 +59,20 @@ public class SortingPuzzle : MonoBehaviour
 
     private void ResetPuzzle()
     {
+        completePuzzleAudio.PlayFailed();
         attempts = new List<int>();
         foreach(BookSortInteraction book in books)
         {
             book.ResetBook();
         }
+    }
+
+    private void CompletePuzzle()
+    {
+        Debug.Log("Finished");
+        animator.Play("BookshelfAwake");
+        portal.SetActive(true);
+        catUI.NextPuzzle(4);
+        completePuzzleAudio.PlayComplete();
     }
 }
