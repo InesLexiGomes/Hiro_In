@@ -72,6 +72,39 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &-6048552811633218684
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Books
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 52fba301ada27b84b897222301609cc6
+  m_Children: []
+  m_Volume: 4aeea6cc6096c4242b27e1cf9a0e8afb
+  m_Pitch: bffde455e4ad1504f93d83d9d1826627
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -3828137978333664332}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-3828137978333664332
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5a7053ad71a1d484386cf9966898e33b
+  m_EffectName: Attenuation
+  m_MixLevel: 1aeae8dbbe5b9ca4ab910acc7cecb4cf
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-2434287511809992300
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -145,6 +178,7 @@ AudioMixerController:
     - 9044cd50d14ed554c98d8c1132c803d7
     - 3d8f372508eab5b4b81b4160e3a94601
     - 49b3b9e1bda6a0c439b6cfce37230c9e
+    - 52fba301ada27b84b897222301609cc6
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -286,6 +320,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: -6205872593878290359}
   - {fileID: 7769230858086783378}
+  - {fileID: -6048552811633218684}
   - {fileID: -2256318963734028093}
   - {fileID: -7832775778414415397}
   m_Volume: faff5882cc2c5e54696f023fd6626c5d
