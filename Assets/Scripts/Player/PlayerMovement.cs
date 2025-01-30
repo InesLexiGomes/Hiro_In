@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
     private Transform   head;
     private Vector3     headRotation;
 
+    // Footsteps
+    [SerializeField] private AudioClip[] footSteps;
+    [SerializeField] private AudioSource audioSource;
+
     void Start()
     {
         playerRigidbody     = GetComponent<Rigidbody>();
@@ -30,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         UpdateRotation();
         UpdateHead();
+        FootStepNoise();
         if (Input.GetKeyDown(KeyCode.F12)) SceneManager.LoadScene("HiroIn");
     }
 
@@ -88,5 +93,15 @@ public class PlayerMovement : MonoBehaviour
 
         playerRigidbody.position += playerMotion;
     }*/
+
+    private void FootStepNoise()
+    {
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            audioSource.Play();
+            audioSource.clip = footSteps[Random.Range(0, footSteps.Length)];
+        }
+        else audioSource.Stop();
+    }
 
 }

@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-8102243654671872954
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footsteps
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 6b1a34819e80547439221457ef225822
+  m_Children: []
+  m_Volume: 3e5ce250d5a448844833e26804148132
+  m_Pitch: 51e948d9f03a2a04386201d248c24100
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 6085688924963765347}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &-7832775778414415397
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -179,6 +198,7 @@ AudioMixerController:
     - 3d8f372508eab5b4b81b4160e3a94601
     - 49b3b9e1bda6a0c439b6cfce37230c9e
     - 52fba301ada27b84b897222301609cc6
+    - 6b1a34819e80547439221457ef225822
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -226,7 +246,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 746c075b213a500488ea9bb0e16fc0ca
-  m_FloatValues: {}
+  m_FloatValues:
+    3e5ce250d5a448844833e26804148132: 9.925883
   m_TransitionOverrides: {}
 --- !u!243 &4493849401918829909
 AudioMixerGroupController:
@@ -247,6 +268,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &6085688924963765347
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: bac7eaa9dd2b40e40aa02fd9c18f1183
+  m_EffectName: Attenuation
+  m_MixLevel: 9627d9faa393f214a8e491c9992c7a85
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &6231482409945425113
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -318,6 +353,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 3d8f372508eab5b4b81b4160e3a94601
   m_Children:
+  - {fileID: -8102243654671872954}
   - {fileID: -6205872593878290359}
   - {fileID: 7769230858086783378}
   - {fileID: -6048552811633218684}
