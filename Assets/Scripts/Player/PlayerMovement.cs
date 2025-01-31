@@ -95,13 +95,14 @@ public class PlayerMovement : MonoBehaviour
     }*/
 
     private void FootStepNoise()
-    {
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+    {if(!audioSource.isPlaying)
         {
-            audioSource.Play();
-            audioSource.clip = footSteps[Random.Range(0, footSteps.Length)];
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                audioSource.Play();
+                audioSource.clip = footSteps[Random.Range(0, footSteps.Length)];
+            }
         }
-        else audioSource.Stop();
     }
 
 }
